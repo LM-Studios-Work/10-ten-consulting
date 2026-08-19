@@ -2,29 +2,59 @@ import Link from 'next/link'
 
 export default function Navbar() {
   return (
-    <nav className="bg-slate-black/40 backdrop-blur-xl border-b border-glass-border fixed top-0 w-full z-50 flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto left-1/2 -translate-x-1/2">
-      <div className="flex items-center gap-4">
-        <Link href="/">
-          <img alt="10TEN Consulting Logo" className="h-10 w-10 object-contain cursor-pointer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDocauMwkcpzhoogaUDXEgKsnIUDDpTSQDehakK8gOEnNhtTdBu3jgc5D3huVxyZX2pWIvBu9OkmYUD41wVjzd5JbeXDwFVEUnH894pcxZli8Wgi6Gg0i7pylGSj0MmTNdhRdmMp4qHKgZTg-XwjkQ5HJxOkY0aVY6kMs8DL7gMNNZdGQ_FepWAX4jOCCxAeNwfSyi_OUoAV40e_PwcZ49D5v2xfvs-xF40bnzjApB4HCRZ0gbDYyzpTAL35kGvsocm9A"/>
-        </Link>
-        <Link href="/">
-          <span className="font-headline-md text-headline-md font-bold text-on-surface cursor-pointer">10TEN Consulting</span>
-        </Link>
+    <div className="fixed top-0 w-full z-50 flex flex-col">
+      {/* Top Bar */}
+      <div className="bg-white border-b border-gray-100 hidden md:flex justify-between items-center px-8 py-2 text-sm text-gray-500">
+        <div className="flex gap-6">
+          <div className="flex items-center gap-2">
+            <span className="material-symbols-outlined text-[18px]">location_on</span>
+            <span>1101, Ascott Park Place Tower Sheikh Zayed Rd, Dubai, UAE</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="material-symbols-outlined text-[18px]">phone</span>
+            <span>+971521485778</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="material-symbols-outlined text-[18px]">mail</span>
+            <span>info@10tenconsulting.com</span>
+          </div>
+        </div>
+        <div className="flex gap-4">
+          <a href="#" className="hover:text-[#004b87]"><span className="material-symbols-outlined text-[18px]">language</span></a>
+        </div>
       </div>
-      {/* Desktop Nav */}
-      <div className="hidden md:flex gap-8 items-center">
-        <Link className="text-on-surface-variant font-body-md hover:text-neon-green transition-colors duration-300" href="/">Home</Link>
-        <Link className="text-on-surface-variant font-body-md hover:text-neon-green transition-colors duration-300" href="/about">About 10TEN</Link>
-        <Link className="text-on-surface-variant font-body-md hover:text-neon-green transition-colors duration-300" href="/industries">Industry Expertise</Link>
-        <Link className="text-on-surface-variant font-body-md hover:text-neon-green transition-colors duration-300" href="/services">Our Services</Link>
-      </div>
-      <Link href="/contact" className="hidden md:block bg-consultant-orange text-white font-label-md text-label-md px-6 py-3 rounded hover:bg-opacity-90 transition-colors text-center cursor-pointer">
-        Request a Demo
-      </Link>
-      {/* Mobile Menu Toggle */}
-      <button className="md:hidden text-neon-green flex items-center justify-center">
-        <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>menu</span>
-      </button>
-    </nav>
+
+      {/* Main Nav */}
+      <nav className="bg-white border-b border-gray-200 w-full flex justify-between items-center px-8 py-4">
+        <div className="flex items-center gap-3">
+          <Link href="/">
+            <div className="flex items-center gap-2">
+              {/* Substitute logo with an icon for now or text */}
+              <span className="material-symbols-outlined text-[#0080ff] text-3xl">show_chart</span>
+              <span className="font-bold text-xl text-gray-900 tracking-tight">10TEN <span className="text-[#0080ff] font-normal">Consulting</span></span>
+            </div>
+          </Link>
+        </div>
+        
+        {/* Desktop Nav */}
+        <div className="hidden lg:flex gap-8 items-center">
+          <Link className="text-gray-600 font-semibold text-sm hover:text-[#004b87] transition-colors" href="/">HOME</Link>
+          <Link className="text-gray-600 font-semibold text-sm hover:text-[#004b87] transition-colors" href="/about">ABOUT US</Link>
+          <Link className="text-gray-600 font-semibold text-sm hover:text-[#004b87] transition-colors" href="/services">SERVICES</Link>
+          <Link className="text-gray-600 font-semibold text-sm hover:text-[#004b87] transition-colors" href="/industries">INDUSTRIES</Link>
+          <Link className="text-gray-600 font-semibold text-sm hover:text-[#004b87] transition-colors" href="/contact">CONTACT US</Link>
+        </div>
+        
+        <Link href="/contact" className="hidden lg:block bg-[#004b87] hover:bg-[#003866] text-white font-semibold text-sm px-6 py-3 rounded transition-colors text-center">
+          GET A CONSULTATION
+        </Link>
+        
+        {/* Mobile Menu Toggle */}
+        <button className="lg:hidden text-gray-900 flex items-center justify-center">
+          <span className="material-symbols-outlined text-3xl">menu</span>
+        </button>
+      </nav>
+    </div>
   )
 }
+

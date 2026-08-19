@@ -2,21 +2,66 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-black border-t border-glass-border w-full py-stack-lg px-margin-desktop flex flex-col items-center gap-stack-md relative z-20 mt-auto">
-      <div className="flex items-center gap-4 mb-4">
-        <span className="font-headline-md text-headline-md font-bold text-neon-green">10TEN Consulting</span>
+    <footer className="bg-[#1a1a1a] w-full pt-16 pb-8 px-8 border-t border-gray-800 text-sm relative z-20 mt-auto">
+      <div className="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        {/* Column 1: Logo & Info */}
+        <div className="flex flex-col gap-4">
+          <div className="flex items-center gap-2 mb-2">
+            <span className="material-symbols-outlined text-white text-3xl">show_chart</span>
+            <span className="font-bold text-xl text-white tracking-tight">10TEN <span className="font-normal text-gray-300">Consulting</span></span>
+          </div>
+          <p className="text-gray-400">
+            10TEN Consulting is a distinguished Financial Consultancy and Corporate Services firm based in South Africa.
+          </p>
+          <div className="flex gap-4 mt-2">
+             {/* Social placeholders */}
+             <a href="#" className="text-gray-400 hover:text-white transition-colors"><span className="material-symbols-outlined text-lg">link</span></a>
+             <a href="#" className="text-gray-400 hover:text-white transition-colors"><span className="material-symbols-outlined text-lg">language</span></a>
+             <a href="#" className="text-gray-400 hover:text-white transition-colors"><span className="material-symbols-outlined text-lg">mail</span></a>
+          </div>
+        </div>
+
+        {/* Column 2: Quick Links */}
+        <div className="flex flex-col gap-4">
+          <h4 className="text-white font-bold uppercase tracking-wider text-sm mb-2">QUICK LINKS</h4>
+          <Link className="text-gray-400 hover:text-white transition-colors" href="/">Home</Link>
+          <Link className="text-gray-400 hover:text-white transition-colors" href="/about">About Us</Link>
+          <Link className="text-gray-400 hover:text-white transition-colors" href="/services">Services</Link>
+          <Link className="text-gray-400 hover:text-white transition-colors" href="/industries">Industries</Link>
+          <Link className="text-gray-400 hover:text-white transition-colors" href="/contact">Contact Us</Link>
+        </div>
+
+        {/* Column 3: Our Services */}
+        <div className="flex flex-col gap-4">
+          <h4 className="text-white font-bold uppercase tracking-wider text-sm mb-2">OUR SERVICES</h4>
+          <Link className="text-gray-400 hover:text-white transition-colors" href="/services">Sage Intacct Licensing</Link>
+          <Link className="text-gray-400 hover:text-white transition-colors" href="/services">Payroll & HR</Link>
+          <Link className="text-gray-400 hover:text-white transition-colors" href="/services">Outsourced Accounting</Link>
+          <Link className="text-gray-400 hover:text-white transition-colors" href="/services">Advisory & Strategy</Link>
+        </div>
+
+        {/* Column 4: Contact */}
+        <div className="flex flex-col gap-4">
+          <h4 className="text-white font-bold uppercase tracking-wider text-sm mb-2">CONTACT</h4>
+          <div className="flex gap-3 text-gray-400">
+             <span className="material-symbols-outlined text-sm mt-0.5">location_on</span>
+             <span>1101, Ascott Park Place Tower Sheikh Zayed Rd, Dubai, UAE</span>
+          </div>
+          <div className="flex gap-3 text-gray-400">
+             <span className="material-symbols-outlined text-sm mt-0.5">mail</span>
+             <span>info@10tenconsulting.com</span>
+          </div>
+          <div className="flex gap-3 text-gray-400">
+             <span className="material-symbols-outlined text-sm mt-0.5">phone</span>
+             <span>+971521485778</span>
+          </div>
+        </div>
       </div>
-      <div className="flex flex-wrap justify-center gap-6 mb-4">
-        <Link className="text-on-surface-variant font-body-md hover:text-consultant-orange transition-colors duration-300" href="/">Home</Link>
-        <Link className="text-on-surface-variant font-body-md hover:text-consultant-orange transition-colors duration-300" href="/about">About Us</Link>
-        <Link className="text-on-surface-variant font-body-md hover:text-consultant-orange transition-colors duration-300" href="/industries">Industry Expertise</Link>
-        <Link className="text-on-surface-variant font-body-md hover:text-consultant-orange transition-colors duration-300" href="/services">Our Services</Link>
-        <Link className="text-on-surface-variant font-body-md hover:text-consultant-orange transition-colors duration-300" href="/contact">Get in Touch</Link>
-      </div>
-      <div className="text-center">
-        <p className="font-headline-md text-headline-md text-on-surface mb-2">Transforming obstacles into solutions.</p>
-        <p className="font-body-md text-body-md text-on-surface-variant">© 2024 10TEN Consulting Services. Transforming obstacles into solutions.</p>
+      
+      <div className="max-w-container-max mx-auto border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-xs">
+        <p>Copyright ©2026 10TEN Consulting. All Rights Reserved.</p>
       </div>
     </footer>
   )
 }
+
