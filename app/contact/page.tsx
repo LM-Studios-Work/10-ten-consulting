@@ -36,7 +36,7 @@ export default function ContactPage() {
               </div>
               <div className="pt-1">
                 <h5 className="text-gray-500 text-xs font-semibold tracking-wider uppercase mb-1">CALL ANYTIME</h5>
-                <p className="text-gray-700 font-medium text-lg">+27 11 000 0000</p>
+                <p className="text-gray-700 font-medium text-lg">(+27) 87 265 2800 / (+27) 74 480 4212</p>
               </div>
             </div>
             
@@ -58,7 +58,7 @@ export default function ContactPage() {
               </div>
               <div className="pt-1">
                 <h5 className="text-gray-500 text-xs font-semibold tracking-wider uppercase mb-1">VISIT OFFICE</h5>
-                <p className="text-gray-700 font-medium text-lg max-w-xs">100 Main Street, Sandton, Johannesburg, South Africa</p>
+                <p className="text-gray-700 font-medium text-lg max-w-xs">Johannesburg, Gauteng, South Africa</p>
               </div>
             </div>
           </div>

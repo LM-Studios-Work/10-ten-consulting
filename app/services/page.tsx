@@ -166,15 +166,102 @@ export default function ServicesPage() {
 
       </section>
       
-      {/* CTA Section */}
-      <section className="bg-[#112224] py-20 px-8 w-full text-center">
-        <h2 className="text-3xl font-bold text-white mb-6">Ready to Transform Your Business?</h2>
-        <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-          Contact our team of experts today to discuss how we can tailor our solutions to meet your specific needs.
-        </p>
-        <Link href="/contact" className="inline-block bg-[#F58220] hover:bg-[#D96E18] text-white font-semibold px-8 py-4 rounded transition-colors shadow-lg">
-          GET A CONSULTATION
-        </Link>
+      {/* Request a Demo Section */}
+      <section className="bg-gray-50 py-24 px-8 w-full border-t border-gray-200">
+        <div className="max-w-container-max mx-auto flex flex-col lg:flex-row gap-16">
+          {/* Info Column */}
+          <div className="w-full lg:w-1/2 flex flex-col gap-8 lg:pr-4">
+            <div>
+              <h4 className="text-[#13363B] font-semibold text-lg mb-2 uppercase tracking-wide">Get In Touch</h4>
+              <h2 className="text-4xl font-bold text-[#001b3c] mb-6 leading-tight">Let's Talk About Your Business.</h2>
+              
+              <div className="text-gray-600 flex flex-col gap-4 text-base md:text-lg leading-relaxed">
+                <p>Looking for a better way to manage your accounting, payroll, HR, or financial operations?</p>
+                <p>At <span className="font-semibold text-[#13363B]">10TEN Consulting Services</span>, we believe the best solutions start with a conversation. Tell us a little about your organisation, your role, and what you are looking to achieve, and our team will get in touch to understand your requirements and explore how we can help.</p>
+                <p>Whether you are considering Sage Intacct, looking to improve your Payroll & HR environment, or considering Outsourced Accounting Services, we would be happy to discuss your needs and demonstrate how our solutions can support your organisation.</p>
+                <p className="font-medium text-[#001b3c]">Complete the form below and we will be in touch within one business day to arrange a consultation or demonstration.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Form Column */}
+          <div className="w-full lg:w-1/2">
+            <div className="bg-white shadow-xl rounded-2xl p-8 md:p-10 border border-gray-100">
+              <h3 className="text-3xl font-bold text-[#001b3c] mb-2">Request a Demo</h3>
+              <p className="text-gray-500 mb-8 font-medium">Tell Us About Yourself</p>
+              
+              <form className="flex flex-col gap-5 w-full" onSubmit={(e) => e.preventDefault()}>
+                <div className="flex flex-col gap-1.5">
+                  <label className="text-sm font-semibold text-[#001b3c]">Name and Surname <span className="text-red-500">*</span></label>
+                  <input 
+                    type="text" 
+                    placeholder="Enter your full name" 
+                    className="bg-gray-50 w-full px-4 py-3.5 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#13363B] focus:bg-white border border-gray-200 transition-all" 
+                  />
+                </div>
+
+                <div className="flex flex-col gap-1.5">
+                  <label className="text-sm font-semibold text-[#001b3c]">Company Name <span className="text-red-500">*</span></label>
+                  <input 
+                    type="text" 
+                    placeholder="Enter your company name" 
+                    className="bg-gray-50 w-full px-4 py-3.5 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#13363B] focus:bg-white border border-gray-200 transition-all" 
+                  />
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  <div className="flex flex-col gap-1.5">
+                    <label className="text-sm font-semibold text-[#001b3c]">Business Email <span className="text-red-500">*</span></label>
+                    <input 
+                      type="email" 
+                      placeholder="you@yourcompany.co.za" 
+                      className="bg-gray-50 w-full px-4 py-3.5 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#13363B] focus:bg-white border border-gray-200 transition-all" 
+                    />
+                  </div>
+
+                  <div className="flex flex-col gap-1.5">
+                    <label className="text-sm font-semibold text-[#001b3c]">Contact Number <span className="text-red-500">*</span></label>
+                    <input 
+                      type="tel" 
+                      placeholder="Enter your contact number" 
+                      className="bg-gray-50 w-full px-4 py-3.5 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#13363B] focus:bg-white border border-gray-200 transition-all" 
+                    />
+                  </div>
+                </div>
+
+                <div className="flex flex-col gap-1.5">
+                  <label className="text-sm font-semibold text-[#001b3c]">Job Title <span className="text-red-500">*</span></label>
+                  <input 
+                    type="text" 
+                    placeholder="e.g. CFO, Finance Manager, Financial Director, Business Owner" 
+                    className="bg-gray-50 w-full px-4 py-3.5 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#13363B] focus:bg-white border border-gray-200 transition-all" 
+                  />
+                </div>
+
+                <div className="flex flex-col gap-1.5 mb-2">
+                  <label className="text-sm font-semibold text-[#001b3c]">Number of Employees <span className="text-red-500">*</span></label>
+                  <div className="relative">
+                    <select defaultValue="" className="bg-gray-50 w-full px-4 py-3.5 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#13363B] focus:bg-white border border-gray-200 transition-all appearance-none pr-10">
+                      <option value="" disabled>Select your organisation size</option>
+                      <option value="1-10">1 - 10</option>
+                      <option value="11-50">11 - 50</option>
+                      <option value="51-200">51 - 200</option>
+                      <option value="201-500">201 - 500</option>
+                      <option value="501+">501+</option>
+                    </select>
+                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-500">
+                      <span className="material-symbols-outlined">expand_more</span>
+                    </div>
+                  </div>
+                </div>
+
+                <button type="submit" className="bg-[#13363B] hover:bg-[#001b3c] text-white font-bold rounded-lg px-8 py-4 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 w-full mt-2 text-sm uppercase tracking-wide">
+                  Submit Request
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
       </section>
     </>
   )
