@@ -6,14 +6,14 @@
   --font-body: var(--font-open-sans);
   --font-heading: var(--font-montserrat);
   
-  --color-primary: #004b87;
-  --color-primary-dark: #003866;
-  --color-secondary: #0080ff;
-  --color-secondary-dark: #0066cc;
+  --color-primary: #13363B;
+  --color-primary-dark: #0C2225;
+  --color-secondary: #F58220;
+  --color-secondary-dark: #D96E18;
   
-  --color-dark-bg: #1f2937;
+  --color-dark-bg: #112224;
   --color-dark-surface: #111827;
-  --color-light-bg: #f8f9fa;
+  --color-light-bg: #EEF2EE;
   --color-light-surface: #ffffff;
   
   --color-text-primary: #111827;

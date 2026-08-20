@@ -22,7 +22,7 @@ export default function IndustriesPage() {
     <>
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden w-full">
-        <div className="absolute inset-0 bg-[#004b87] mix-blend-multiply opacity-80 z-10"></div>
+        <div className="absolute inset-0 bg-[#13363B] mix-blend-multiply opacity-80 z-10"></div>
         <img 
           src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" 
           alt="Industry Expertise" 
@@ -50,7 +50,7 @@ export default function IndustriesPage() {
               That is why we take an industry-focused approach to our solutions. Rather than applying a one-size-fits-all model, we take the time to understand the unique characteristics of your industry, the way your organisation operates, and the challenges you face. We then align our accounting technology, payroll and HR, and outsourced finance solutions with those requirements.
             </p>
           </div>
-          <div className="w-full lg:w-1/2 bg-[#004b87] p-12 rounded-xl flex items-center justify-center relative overflow-hidden shadow-2xl">
+          <div className="w-full lg:w-1/2 bg-[#13363B] p-12 rounded-xl flex items-center justify-center relative overflow-hidden shadow-2xl">
              <p className="text-2xl font-medium text-white text-center italic relative z-10 leading-relaxed">
                "Our goal is to help organisations in diverse industries simplify complexity, improve financial visibility, strengthen processes, and create scalable foundations for growth."
              </p>
@@ -63,11 +63,9 @@ export default function IndustriesPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {industries.map((industry, index) => (
               <div key={index} className="bg-white p-10 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center justify-center text-center gap-6 hover:shadow-lg hover:-translate-y-1 transition-all group">
-                <div className="w-20 h-20 rounded-full bg-blue-50 flex items-center justify-center group-hover:bg-[#004b87] transition-colors duration-300">
-                  <span className="material-symbols-outlined text-4xl text-[#0080ff] group-hover:text-white transition-colors duration-300">
-                    {industry.icon}
-                  </span>
-                </div>
+                <span className="material-symbols-outlined text-6xl text-[#F58220] font-bold group-hover:text-[#13363B] transition-colors duration-300" style={{ fontVariationSettings: "'FILL' 0, 'wght' 600, 'GRAD' 0, 'opsz' 48" }}>
+                  {industry.icon}
+                </span>
                 <h4 className="text-xl font-bold text-[#001b3c]">{industry.name}</h4>
               </div>
             ))}
@@ -78,17 +76,17 @@ export default function IndustriesPage() {
           <p className="text-gray-600 leading-relaxed text-lg mb-6">
             Whether you operate in a highly specialised sector or a rapidly evolving market, we bring a combination of accounting expertise, business understanding, and technology capability to help your organisation operate more effectively.
           </p>
-          <h3 className="text-2xl font-bold text-[#004b87]">Your industry is unique. Your solution should be too.</h3>
+          <h3 className="text-2xl font-bold text-[#13363B]">Your industry is unique. Your solution should be too.</h3>
         </div>
       </section>
       
       {/* CTA Section */}
-      <section className="bg-[#1f2937] py-20 px-8 w-full text-center">
+      <section className="bg-[#112224] py-20 px-8 w-full text-center">
         <h2 className="text-3xl font-bold text-white mb-6">Discuss Your Industry Challenges</h2>
         <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
           Contact us today to find out how our industry-specific expertise can help your organisation.
         </p>
-        <Link href="/contact" className="inline-block bg-[#0080ff] hover:bg-[#0066cc] text-white font-semibold px-8 py-4 rounded transition-colors shadow-lg">
+        <Link href="/contact" className="inline-block bg-[#F58220] hover:bg-[#D96E18] text-white font-semibold px-8 py-4 rounded transition-colors shadow-lg">
           GET A CONSULTATION
         </Link>
       </section>

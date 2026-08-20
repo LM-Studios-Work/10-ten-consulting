@@ -10,7 +10,7 @@ export default function ServicesPage() {
     <>
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden w-full">
-        <div className="absolute inset-0 bg-[#004b87] mix-blend-multiply opacity-80 z-10"></div>
+        <div className="absolute inset-0 bg-[#13363B] mix-blend-multiply opacity-80 z-10"></div>
         <img 
           src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop" 
           alt="Our Services" 
@@ -40,7 +40,7 @@ export default function ServicesPage() {
         <div className="flex flex-col lg:flex-row w-full bg-white">
           <div className="lg:w-1/2 p-12 lg:p-24 flex flex-col justify-center">
             <div className="flex items-center gap-4 mb-6">
-              <span className="material-symbols-outlined text-[#0080ff] text-4xl">account_tree</span>
+              <span className="material-symbols-outlined text-[#F58220] text-4xl">account_tree</span>
               <h2 className="text-3xl font-bold text-[#001b3c]">Sage Intacct Licensing & Implementation</h2>
             </div>
             <p className="text-gray-600 mb-8 text-lg">
@@ -50,17 +50,17 @@ export default function ServicesPage() {
               <div>
                 <h4 className="font-bold text-[#001b3c] mb-2 text-lg">Licensing & Strategy</h4>
                 <ul className="space-y-2 text-gray-600">
-                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#0080ff] text-sm mt-1">check</span> Product selection & user requirements</li>
-                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#0080ff] text-sm mt-1">check</span> Entity & module requirements</li>
-                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#0080ff] text-sm mt-1">check</span> Expansion considerations</li>
+                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Product selection & user requirements</li>
+                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Entity & module requirements</li>
+                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Expansion considerations</li>
                 </ul>
               </div>
               <div>
                 <h4 className="font-bold text-[#001b3c] mb-2 text-lg">Implementation & Support</h4>
                 <ul className="space-y-2 text-gray-600">
-                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#0080ff] text-sm mt-1">check</span> Requirements gathering & solution design</li>
-                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#0080ff] text-sm mt-1">check</span> Data migration & system testing</li>
-                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#0080ff] text-sm mt-1">check</span> User training & go-live support</li>
+                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Requirements gathering & solution design</li>
+                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Data migration & system testing</li>
+                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> User training & go-live support</li>
                 </ul>
               </div>
             </div>
@@ -74,7 +74,7 @@ export default function ServicesPage() {
         <div className="flex flex-col lg:flex-row-reverse w-full bg-gray-50">
           <div className="lg:w-1/2 p-12 lg:p-24 flex flex-col justify-center">
             <div className="flex items-center gap-4 mb-6">
-              <span className="material-symbols-outlined text-[#0080ff] text-4xl">groups</span>
+              <span className="material-symbols-outlined text-[#F58220] text-4xl">groups</span>
               <h2 className="text-3xl font-bold text-[#001b3c]">Payroll & HR</h2>
             </div>
             <p className="text-gray-600 mb-8 text-lg">
@@ -84,17 +84,17 @@ export default function ServicesPage() {
               <div>
                 <h4 className="font-bold text-[#001b3c] mb-2 text-lg">Payroll Solutions</h4>
                 <ul className="space-y-2 text-gray-600">
-                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#0080ff] text-sm mt-1">check</span> Payroll processing & administration</li>
-                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#0080ff] text-sm mt-1">check</span> Leave management & reporting</li>
-                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#0080ff] text-sm mt-1">check</span> Statutory requirements & controls</li>
+                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Payroll processing & administration</li>
+                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Leave management & reporting</li>
+                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Statutory requirements & controls</li>
                 </ul>
               </div>
               <div>
                 <h4 className="font-bold text-[#001b3c] mb-2 text-lg">HR Solutions</h4>
                 <ul className="space-y-2 text-gray-600">
-                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#0080ff] text-sm mt-1">check</span> Employee information management</li>
-                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#0080ff] text-sm mt-1">check</span> HR administration & reporting</li>
-                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#0080ff] text-sm mt-1">check</span> Employee lifecycle administration</li>
+                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Employee information management</li>
+                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> HR administration & reporting</li>
+                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Employee lifecycle administration</li>
                 </ul>
               </div>
             </div>
@@ -108,7 +108,7 @@ export default function ServicesPage() {
         <div className="flex flex-col lg:flex-row w-full bg-white">
           <div className="lg:w-1/2 p-12 lg:p-24 flex flex-col justify-center">
             <div className="flex items-center gap-4 mb-6">
-              <span className="material-symbols-outlined text-[#0080ff] text-4xl">finance</span>
+              <span className="material-symbols-outlined text-[#F58220] text-4xl">finance</span>
               <h2 className="text-3xl font-bold text-[#001b3c]">Outsourced Accounting</h2>
             </div>
             <p className="text-gray-600 mb-8 text-lg">
@@ -118,17 +118,17 @@ export default function ServicesPage() {
               <div>
                 <h4 className="font-bold text-[#001b3c] mb-2 text-lg">Bookkeeping & Reconciliations</h4>
                 <ul className="space-y-2 text-gray-600">
-                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#0080ff] text-sm mt-1">check</span> General ledger management</li>
-                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#0080ff] text-sm mt-1">check</span> Accounts payable & receivable</li>
-                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#0080ff] text-sm mt-1">check</span> Bank & supplier reconciliations</li>
+                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> General ledger management</li>
+                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Accounts payable & receivable</li>
+                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Bank & supplier reconciliations</li>
                 </ul>
               </div>
               <div>
                 <h4 className="font-bold text-[#001b3c] mb-2 text-lg">Reporting & Analysis</h4>
                 <ul className="space-y-2 text-gray-600">
-                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#0080ff] text-sm mt-1">check</span> Management accounts & financial reporting</li>
-                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#0080ff] text-sm mt-1">check</span> Budgeting & cash-flow forecasting</li>
-                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#0080ff] text-sm mt-1">check</span> Month-end close support</li>
+                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Management accounts & financial reporting</li>
+                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Budgeting & cash-flow forecasting</li>
+                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Month-end close support</li>
                 </ul>
               </div>
             </div>
@@ -142,7 +142,7 @@ export default function ServicesPage() {
         <div className="flex flex-col lg:flex-row-reverse w-full bg-gray-50">
           <div className="lg:w-1/2 p-12 lg:p-24 flex flex-col justify-center">
             <div className="flex items-center gap-4 mb-6">
-              <span className="material-symbols-outlined text-[#0080ff] text-4xl">lightbulb</span>
+              <span className="material-symbols-outlined text-[#F58220] text-4xl">lightbulb</span>
               <h2 className="text-3xl font-bold text-[#001b3c]">Advisory & Strategy</h2>
             </div>
             <p className="text-gray-600 mb-8 text-lg">
@@ -152,9 +152,9 @@ export default function ServicesPage() {
               <div>
                 <h4 className="font-bold text-[#001b3c] mb-2 text-lg">Process Optimisation</h4>
                 <ul className="space-y-2 text-gray-600">
-                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#0080ff] text-sm mt-1">check</span> System integrations</li>
-                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#0080ff] text-sm mt-1">check</span> Operational assessments</li>
-                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#0080ff] text-sm mt-1">check</span> Strategic planning</li>
+                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> System integrations</li>
+                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Operational assessments</li>
+                  <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Strategic planning</li>
                 </ul>
               </div>
             </div>
@@ -167,12 +167,12 @@ export default function ServicesPage() {
       </section>
       
       {/* CTA Section */}
-      <section className="bg-[#1f2937] py-20 px-8 w-full text-center">
+      <section className="bg-[#112224] py-20 px-8 w-full text-center">
         <h2 className="text-3xl font-bold text-white mb-6">Ready to Transform Your Business?</h2>
         <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
           Contact our team of experts today to discuss how we can tailor our solutions to meet your specific needs.
         </p>
-        <Link href="/contact" className="inline-block bg-[#0080ff] hover:bg-[#0066cc] text-white font-semibold px-8 py-4 rounded transition-colors shadow-lg">
+        <Link href="/contact" className="inline-block bg-[#F58220] hover:bg-[#D96E18] text-white font-semibold px-8 py-4 rounded transition-colors shadow-lg">
           GET A CONSULTATION
         </Link>
       </section>

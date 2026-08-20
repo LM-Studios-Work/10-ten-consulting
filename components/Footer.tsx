@@ -1,14 +1,14 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1a1a1a] w-full pt-16 pb-8 px-8 border-t border-gray-800 text-sm relative z-20 mt-auto">
+    <footer className="bg-[#112224] w-full pt-16 pb-8 px-8 border-t border-gray-800 text-sm relative z-20 mt-auto">
       <div className="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         {/* Column 1: Logo & Info */}
         <div className="flex flex-col gap-4">
-          <div className="flex items-center gap-2 mb-2">
-            <span className="material-symbols-outlined text-white text-3xl">show_chart</span>
-            <span className="font-bold text-xl text-white tracking-tight">10TEN <span className="font-normal text-gray-300">Consulting</span></span>
+          <div className="flex items-center mb-4 bg-white/90 p-3 rounded-lg w-fit">
+            <Image src="/logo.png" alt="10TEN Consulting Logo" width={180} height={60} className="w-auto h-12 object-contain" />
           </div>
           <p className="text-gray-400">
             10TEN Consulting is a distinguished Financial Consultancy and Corporate Services firm based in South Africa.
@@ -45,7 +45,7 @@ export default function Footer() {
           <h4 className="text-white font-bold uppercase tracking-wider text-sm mb-2">CONTACT</h4>
           <div className="flex gap-3 text-gray-400">
              <span className="material-symbols-outlined text-sm mt-0.5">location_on</span>
-             <span>1101, Ascott Park Place Tower Sheikh Zayed Rd, Dubai, UAE</span>
+             <span>100 Main Street, Sandton, Johannesburg, South Africa</span>
           </div>
           <div className="flex gap-3 text-gray-400">
              <span className="material-symbols-outlined text-sm mt-0.5">mail</span>
@@ -53,7 +53,7 @@ export default function Footer() {
           </div>
           <div className="flex gap-3 text-gray-400">
              <span className="material-symbols-outlined text-sm mt-0.5">phone</span>
-             <span>+971521485778</span>
+             <span>+27 11 000 0000</span>
           </div>
         </div>
       </div>

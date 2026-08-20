@@ -37,7 +37,7 @@ export default function FAQ() {
             <button
               onClick={() => toggleFAQ(index)}
               className={`w-full flex items-center justify-between p-4 text-left font-semibold transition-colors ${
-                isOpen ? 'bg-[#004b87] text-white' : 'bg-[#1a1a1a] text-gray-200 hover:bg-[#252525]'
+                isOpen ? 'bg-[#13363B] text-white' : 'bg-[#1a1a1a] text-gray-200 hover:bg-[#252525]'
               }`}
             >
               {faq.question}

@@ -10,7 +10,7 @@ export default function AboutPage() {
     <>
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden w-full">
-        <div className="absolute inset-0 bg-[#004b87] mix-blend-multiply opacity-80 z-10"></div>
+        <div className="absolute inset-0 bg-[#13363B] mix-blend-multiply opacity-80 z-10"></div>
         <img 
           src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop" 
           alt="About 10TEN Consulting" 
@@ -34,8 +34,8 @@ export default function AboutPage() {
             
             <div className="flex flex-col gap-6 mt-6">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded bg-blue-50 flex items-center justify-center flex-shrink-0 mt-1">
-                  <span className="material-symbols-outlined text-[#0080ff]">lightbulb</span>
+                <div className="w-12 h-12 rounded flex items-center flex-shrink-0 mt-1">
+                  <span className="material-symbols-outlined text-[#F58220] text-3xl">lightbulb</span>
                 </div>
                 <div>
                   <h4 className="text-xl font-bold text-[#001b3c]">Technology + Accounting</h4>
@@ -44,8 +44,8 @@ export default function AboutPage() {
               </div>
               
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded bg-blue-50 flex items-center justify-center flex-shrink-0 mt-1">
-                  <span className="material-symbols-outlined text-[#0080ff]">handshake</span>
+                <div className="w-12 h-12 rounded flex items-center flex-shrink-0 mt-1">
+                  <span className="material-symbols-outlined text-[#F58220] text-3xl">handshake</span>
                 </div>
                 <div>
                   <h4 className="text-xl font-bold text-[#001b3c]">Client-Centric Support</h4>
@@ -66,7 +66,7 @@ export default function AboutPage() {
       </section>
 
       {/* Leadership Section */}
-      <section className="bg-[#1f2937] py-24 px-8 w-full">
+      <section className="bg-[#112224] py-24 px-8 w-full">
         <div className="max-w-container-max mx-auto flex flex-col lg:flex-row gap-16 items-center">
           <div className="lg:w-1/3">
             <img 
@@ -76,10 +76,10 @@ export default function AboutPage() {
             />
           </div>
           <div className="lg:w-2/3 flex flex-col gap-4">
-            <span className="text-[#0080ff] font-semibold tracking-wider text-sm">Leadership</span>
+            <span className="text-[#F58220] font-semibold tracking-wider text-sm">Leadership</span>
             <h2 className="text-3xl lg:text-4xl font-bold text-white">Placeholder Name, CPA</h2>
             <h3 className="text-xl text-gray-300 font-medium">Founder & Managing Director</h3>
-            <div className="w-12 h-1 bg-[#0080ff] my-4"></div>
+            <div className="w-12 h-1 bg-[#F58220] my-4"></div>
             <p className="text-gray-400 leading-relaxed text-lg">
               Our leadership brings extensive experience in Sage Intacct implementation, financial consulting, and business strategy. With a deep understanding of the unique challenges faced by growing organisations, we lead a team of dedicated professionals committed to delivering practical, high-impact solutions.
             </p>
@@ -126,7 +126,7 @@ export default function AboutPage() {
       {/* Core Values */}
       <section className="bg-gray-50 py-24 px-8 w-full">
         <div className="max-w-container-max mx-auto flex flex-col items-center">
-          <span className="text-[#0080ff] font-semibold tracking-wider text-sm mb-4">Values</span>
+          <span className="text-[#F58220] font-semibold tracking-wider text-sm mb-4">Values</span>
           <h2 className="text-3xl lg:text-4xl font-bold text-[#001b3c] text-center max-w-2xl mb-16 leading-tight">
             At 10TEN, Our Core Values Guide Every Decision
           </h2>
@@ -134,42 +134,42 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
             {/* Value 1 */}
             <div className="bg-white p-10 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-              <span className="material-symbols-outlined text-[#0080ff] text-4xl mb-6">workspace_premium</span>
+              <span className="material-symbols-outlined text-[#F58220] mb-6" style={{ fontSize: '48px' }}>workspace_premium</span>
               <h3 className="text-xl font-bold text-[#001b3c] mb-4">Trust</h3>
               <p className="text-gray-600">We build confidence through transparency and ethical conduct in every engagement.</p>
             </div>
             
             {/* Value 2 */}
             <div className="bg-white p-10 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-              <span className="material-symbols-outlined text-[#0080ff] text-4xl mb-6">public</span>
+              <span className="material-symbols-outlined text-[#F58220] mb-6" style={{ fontSize: '48px' }}>public</span>
               <h3 className="text-xl font-bold text-[#001b3c] mb-4">Responsiveness</h3>
               <p className="text-gray-600">We remain agile to address client needs promptly and effectively.</p>
             </div>
             
             {/* Value 3 */}
             <div className="bg-white p-10 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-              <span className="material-symbols-outlined text-[#0080ff] text-4xl mb-6">verified_user</span>
+              <span className="material-symbols-outlined text-[#F58220] mb-6" style={{ fontSize: '48px' }}>verified_user</span>
               <h3 className="text-xl font-bold text-[#001b3c] mb-4">Integrity</h3>
               <p className="text-gray-600">Upholding honesty and professionalism in all our operations and client interactions.</p>
             </div>
             
             {/* Value 4 */}
             <div className="bg-white p-10 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-              <span className="material-symbols-outlined text-[#0080ff] text-4xl mb-6">diamond</span>
+              <span className="material-symbols-outlined text-[#F58220] mb-6" style={{ fontSize: '48px' }}>diamond</span>
               <h3 className="text-xl font-bold text-[#001b3c] mb-4">Excellence</h3>
               <p className="text-gray-600">We maintain the highest standards across all our services and solutions.</p>
             </div>
             
             {/* Value 5 */}
             <div className="bg-white p-10 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-              <span className="material-symbols-outlined text-[#0080ff] text-4xl mb-6">diversity_3</span>
+              <span className="material-symbols-outlined text-[#F58220] mb-6" style={{ fontSize: '48px' }}>diversity_3</span>
               <h3 className="text-xl font-bold text-[#001b3c] mb-4">Collaboration</h3>
               <p className="text-gray-600">We form strong partnerships with clients, working together for shared success.</p>
             </div>
             
             {/* Value 6 */}
             <div className="bg-white p-10 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-              <span className="material-symbols-outlined text-[#0080ff] text-4xl mb-6">tips_and_updates</span>
+              <span className="material-symbols-outlined text-[#F58220] mb-6" style={{ fontSize: '48px' }}>tips_and_updates</span>
               <h3 className="text-xl font-bold text-[#001b3c] mb-4">Innovation</h3>
               <p className="text-gray-600">Continuously seeking new ideas and cutting-edge solutions to stay ahead.</p>
             </div>
@@ -186,7 +186,7 @@ export default function AboutPage() {
               With a team of certified professionals and a legacy of success, 10TEN Consulting offers deep industry knowledge in software implementation, outsourced accounting, and business strategy. Our multidisciplinary approach ensures clients benefit from integrated solutions that uphold compliance and drive strategic growth.
             </p>
             <div>
-              <Link href="/contact" className="inline-block bg-[#004b87] hover:bg-[#003866] text-white font-semibold px-8 py-4 rounded transition-colors shadow-lg hover:shadow-xl">
+              <Link href="/contact" className="inline-block bg-[#13363B] hover:bg-[#0C2225] text-white font-semibold px-8 py-4 rounded transition-colors shadow-lg hover:shadow-xl">
                 GET A CONSULTATION
               </Link>
             </div>
