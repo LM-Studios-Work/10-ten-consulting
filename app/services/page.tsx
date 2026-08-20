@@ -190,7 +190,7 @@ export default function ServicesPage() {
               <h3 className="text-3xl font-bold text-[#001b3c] mb-2">Request a Demo</h3>
               <p className="text-gray-500 mb-8 font-medium">Tell Us About Yourself</p>
               
-              <form className="flex flex-col gap-5 w-full" onSubmit={(e) => e.preventDefault()}>
+              <form className="flex flex-col gap-5 w-full">
                 <div className="flex flex-col gap-1.5">
                   <label className="text-sm font-semibold text-[#001b3c]">Name and Surname <span className="text-red-500">*</span></label>
                   <input 
