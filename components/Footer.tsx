@@ -45,7 +45,7 @@ export default function Footer() {
           <h4 className="text-white font-bold uppercase tracking-wider text-sm mb-2">CONTACT</h4>
           <div className="flex gap-3 text-gray-400">
              <span className="material-symbols-outlined text-sm mt-0.5">location_on</span>
-             <span>100 Main Street, Sandton, Johannesburg, South Africa</span>
+             <span>Johannesburg, Gauteng</span>
           </div>
           <div className="flex gap-3 text-gray-400">
              <span className="material-symbols-outlined text-sm mt-0.5">mail</span>
@@ -53,7 +53,7 @@ export default function Footer() {
           </div>
           <div className="flex gap-3 text-gray-400">
              <span className="material-symbols-outlined text-sm mt-0.5">phone</span>
-             <span>+27 11 000 0000</span>
+             <span>+27 87 265 2800</span>
           </div>
         </div>
       </div>
