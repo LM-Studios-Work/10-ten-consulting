@@ -1,14 +1,39 @@
 'use client'
 
+import { useState, FormEvent } from 'react'
+
 export default function ContactPage() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      await fetch("https://formsubmit.co/ajax/sales@10tenconsulting.co.za", {
+        method: "POST",
+        body: formData,
+      });
+      setIsSubmitted(true);
+      form.reset();
+    } catch (error) {
+      console.error("Form submission error", error);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <>
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden w-full">
         <div className="absolute inset-0 bg-[#13363B] mix-blend-multiply opacity-80 z-10"></div>
-        <img 
-          src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop" 
-          alt="Contact Us" 
+        <img
+          src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop"
+          alt="Contact Us"
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
         <div className="relative z-20 w-full text-center px-4 flex flex-col items-center">
@@ -20,7 +45,7 @@ export default function ContactPage() {
 
       {/* Main Content */}
       <section className="py-24 px-8 max-w-container-max mx-auto w-full flex flex-col lg:flex-row gap-16">
-        
+
         {/* Info Column */}
         <div className="w-full lg:w-1/2 flex flex-col gap-8 lg:pr-12">
           <div>
@@ -39,7 +64,7 @@ export default function ContactPage() {
                 <p className="text-gray-700 font-medium text-lg">(+27) 87 265 2800 / (+27) 74 480 4212</p>
               </div>
             </div>
-            
+
             {/* Email */}
             <div className="flex gap-6 items-start">
               <div className="w-14 h-14 rounded-full bg-gray-50 flex items-center justify-center flex-shrink-0">
@@ -50,7 +75,7 @@ export default function ContactPage() {
                 <p className="text-gray-700 font-medium text-lg">info@10tenconsulting.com</p>
               </div>
             </div>
-            
+
             {/* Address */}
             <div className="flex gap-6 items-start">
               <div className="w-14 h-14 rounded-full bg-gray-50 flex items-center justify-center flex-shrink-0">
@@ -66,57 +91,73 @@ export default function ContactPage() {
 
         {/* Form Column */}
         <div className="w-full lg:w-1/2">
-          <form className="flex flex-col gap-6 w-full" onSubmit={(e) => e.preventDefault()}>
+          {isSubmitted ? (
+            <div className="bg-[#f7f8f9] p-12 text-center flex flex-col items-center justify-center h-full min-h-[400px]">
+              <span className="material-symbols-outlined text-6xl text-green-500 mb-4">check_circle</span>
+              <h3 className="text-2xl font-bold text-[#001b3c] mb-2">Thank You!</h3>
+              <p className="text-gray-600">Your message has been sent successfully. We will get back to you soon.</p>
+            </div>
+          ) : (
+          <form className="flex flex-col gap-6 w-full" onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
-              <input 
-                type="text" 
-                placeholder="Your name" 
-                className="bg-[#f7f8f9] w-full px-6 py-4 text-gray-700 focus:outline-none focus:ring-1 focus:ring-[#13363B] transition-colors" 
+              <input
+                type="text"
+                name="name"
+                required
+                placeholder="Your name"
+                className="bg-[#f7f8f9] w-full px-6 py-4 text-gray-700 focus:outline-none focus:ring-1 focus:ring-[#13363B] transition-colors"
               />
-              <input 
-                type="email" 
-                placeholder="Your email" 
-                className="bg-[#f7f8f9] w-full px-6 py-4 text-gray-700 focus:outline-none focus:ring-1 focus:ring-[#13363B] transition-colors" 
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="Your email"
+                className="bg-[#f7f8f9] w-full px-6 py-4 text-gray-700 focus:outline-none focus:ring-1 focus:ring-[#13363B] transition-colors"
               />
             </div>
-            
+
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
-              <input 
-                type="tel" 
-                placeholder="Your Phone" 
-                className="bg-[#f7f8f9] w-full px-6 py-4 text-gray-700 focus:outline-none focus:ring-1 focus:ring-[#13363B] transition-colors" 
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Your Phone"
+                className="bg-[#f7f8f9] w-full px-6 py-4 text-gray-700 focus:outline-none focus:ring-1 focus:ring-[#13363B] transition-colors"
               />
-              <input 
-                type="text" 
-                placeholder="Subject" 
-                className="bg-[#f7f8f9] w-full px-6 py-4 text-gray-700 focus:outline-none focus:ring-1 focus:ring-[#13363B] transition-colors" 
+              <input
+                type="text"
+                name="_subject"
+                placeholder="Subject"
+                className="bg-[#f7f8f9] w-full px-6 py-4 text-gray-700 focus:outline-none focus:ring-1 focus:ring-[#13363B] transition-colors"
               />
             </div>
-            
-            <textarea 
-              placeholder="Your Message" 
+
+            <textarea
+              name="message"
+              required
+              placeholder="Your Message"
               rows={6}
-              className="bg-[#f7f8f9] w-full px-6 py-4 text-gray-700 focus:outline-none focus:ring-1 focus:ring-[#13363B] transition-colors resize-none" 
+              className="bg-[#f7f8f9] w-full px-6 py-4 text-gray-700 focus:outline-none focus:ring-1 focus:ring-[#13363B] transition-colors resize-none"
             ></textarea>
 
             <div>
-              <button type="submit" className="bg-[#13363B] hover:bg-[#0C2225] text-white font-semibold text-sm px-8 py-4 transition-colors">
-                SEND A MESSAGE
+              <button disabled={isSubmitting} type="submit" className="bg-[#13363B] hover:bg-[#0C2225] disabled:opacity-70 text-white font-semibold text-sm px-8 py-4 transition-colors">
+                {isSubmitting ? "SENDING..." : "SEND A MESSAGE"}
               </button>
             </div>
           </form>
+          )}
         </div>
       </section>
 
       {/* Map Section */}
       <section className="w-full h-[400px] bg-gray-200">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114584.73585324545!2d27.977464299863412!3d-26.09361138407028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9573ec31d87e19%3A0xc682390a3de059e9!2sSandton%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1700000000000!5m2!1sen!2sza" 
-          width="100%" 
-          height="100%" 
-          style={{ border: 0 }} 
-          allowFullScreen={false} 
-          loading="lazy" 
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114584.73585324545!2d27.977464299863412!3d-26.09361138407028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9573ec31d87e19%3A0xc682390a3de059e9!2sSandton%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1700000000000!5m2!1sen!2sza"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen={false}
+          loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </section>
