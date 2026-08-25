@@ -25,19 +25,16 @@ export default function Navbar() {
         <div className="flex gap-6">
           <div className="flex items-center gap-2">
             <span className="material-symbols-outlined text-[18px]">location_on</span>
-            <span>1101, Ascott Park Place Tower Sheikh Zayed Rd, Dubai, UAE</span>
+            <span>Johannesburg, Gauteng</span>
           </div>
           <div className="flex items-center gap-2">
             <span className="material-symbols-outlined text-[18px]">phone</span>
-            <span>+971521485778</span>
+            <span>+27 87 265 2800</span>
           </div>
           <div className="flex items-center gap-2">
             <span className="material-symbols-outlined text-[18px]">mail</span>
             <span>info@10tenconsulting.com</span>
           </div>
-        </div>
-        <div className="flex gap-4">
-          <a href="#" className="hover:text-[#13363B]"><span className="material-symbols-outlined text-[18px]">language</span></a>
         </div>
       </div>
 
@@ -112,11 +109,11 @@ export default function Navbar() {
           </div>
           <div className="flex items-center gap-3 text-gray-500 text-sm">
             <span className="material-symbols-outlined text-xl text-[#13363B]">phone</span>
-            <span>+971521485778</span>
+            <span>+27 87 265 2800</span>
           </div>
           <div className="flex items-start gap-3 text-gray-500 text-sm">
             <span className="material-symbols-outlined text-xl text-[#13363B]">location_on</span>
-            <span className="leading-snug">1101, Ascott Park Place Tower<br/>Sheikh Zayed Rd, Dubai, UAE</span>
+            <span className="leading-snug">Johannesburg, Gauteng</span>
           </div>
         </div>
       </div>
