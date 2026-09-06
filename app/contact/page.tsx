@@ -44,46 +44,46 @@ export default function ContactPage() {
       </section>
 
       {/* Main Content */}
-      <section className="py-24 px-8 max-w-container-max mx-auto w-full flex flex-col lg:flex-row gap-16">
+      <section className="py-24 px-8 max-w-container-max mx-auto w-full flex flex-col lg:flex-row gap-16 relative z-10">
 
         {/* Info Column */}
         <div className="w-full lg:w-1/2 flex flex-col gap-8 lg:pr-12">
           <div>
-            <h4 className="text-[#13363B] font-semibold text-lg mb-2">Contact With Us</h4>
-            <h2 className="text-4xl font-bold text-[#001b3c]">Speak With Our Consultant</h2>
+            <h4 className="text-[#F58220] font-semibold text-lg mb-2 uppercase tracking-wide">Contact With Us</h4>
+            <h2 className="text-4xl font-bold text-white">Speak With Our Consultant</h2>
           </div>
 
           <div className="flex flex-col gap-10 mt-4">
             {/* Call */}
             <div className="flex gap-6 items-start">
-              <div className="w-14 h-14 rounded-full bg-gray-50 flex items-center justify-center flex-shrink-0">
-                <span className="material-symbols-outlined text-gray-500">call</span>
+              <div className="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0">
+                <span className="material-symbols-outlined text-[#F58220]">call</span>
               </div>
               <div className="pt-1">
-                <h5 className="text-gray-500 text-xs font-semibold tracking-wider uppercase mb-1">CALL ANYTIME</h5>
-                <p className="text-gray-700 font-medium text-lg">(+27) 87 265 2800 / (+27) 74 480 4212</p>
+                <h5 className="text-gray-400 text-xs font-semibold tracking-wider uppercase mb-1">CALL ANYTIME</h5>
+                <p className="text-gray-300 font-medium text-lg">(+27) 87 265 2800 / (+27) 74 480 4212</p>
               </div>
             </div>
 
             {/* Email */}
             <div className="flex gap-6 items-start">
-              <div className="w-14 h-14 rounded-full bg-gray-50 flex items-center justify-center flex-shrink-0">
-                <span className="material-symbols-outlined text-gray-500">mail</span>
+              <div className="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0">
+                <span className="material-symbols-outlined text-[#F58220]">mail</span>
               </div>
               <div className="pt-1">
-                <h5 className="text-gray-500 text-xs font-semibold tracking-wider uppercase mb-1">SEND EMAIL</h5>
-                <p className="text-gray-700 font-medium text-lg">info@10tenconsulting.com</p>
+                <h5 className="text-gray-400 text-xs font-semibold tracking-wider uppercase mb-1">SEND EMAIL</h5>
+                <p className="text-gray-300 font-medium text-lg">info@10tenconsulting.com</p>
               </div>
             </div>
 
             {/* Address */}
             <div className="flex gap-6 items-start">
-              <div className="w-14 h-14 rounded-full bg-gray-50 flex items-center justify-center flex-shrink-0">
-                <span className="material-symbols-outlined text-gray-500">location_on</span>
+              <div className="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0">
+                <span className="material-symbols-outlined text-[#F58220]">location_on</span>
               </div>
               <div className="pt-1">
-                <h5 className="text-gray-500 text-xs font-semibold tracking-wider uppercase mb-1">VISIT OFFICE</h5>
-                <p className="text-gray-700 font-medium text-lg max-w-xs">Johannesburg, Gauteng, South Africa</p>
+                <h5 className="text-gray-400 text-xs font-semibold tracking-wider uppercase mb-1">VISIT OFFICE</h5>
+                <p className="text-gray-300 font-medium text-lg max-w-xs">Johannesburg, Gauteng, South Africa</p>
               </div>
             </div>
           </div>
@@ -92,10 +92,10 @@ export default function ContactPage() {
         {/* Form Column */}
         <div className="w-full lg:w-1/2">
           {isSubmitted ? (
-            <div className="bg-[#f7f8f9] p-12 text-center flex flex-col items-center justify-center h-full min-h-[400px]">
+            <div className="bg-white/5 backdrop-blur-md border border-white/10 p-12 text-center flex flex-col items-center justify-center h-full min-h-[400px]">
               <span className="material-symbols-outlined text-6xl text-green-500 mb-4">check_circle</span>
-              <h3 className="text-2xl font-bold text-[#001b3c] mb-2">Thank You!</h3>
-              <p className="text-gray-600">Your message has been sent successfully. We will get back to you soon.</p>
+              <h3 className="text-2xl font-bold text-white mb-2">Thank You!</h3>
+              <p className="text-gray-300">Your message has been sent successfully. We will get back to you soon.</p>
             </div>
           ) : (
           <form className="flex flex-col gap-6 w-full" onSubmit={handleSubmit}>
@@ -105,14 +105,14 @@ export default function ContactPage() {
                 name="name"
                 required
                 placeholder="Your name"
-                className="bg-[#f7f8f9] w-full px-6 py-4 text-gray-700 focus:outline-none focus:ring-1 focus:ring-[#13363B] transition-colors"
+                className="bg-white/5 backdrop-blur-md border border-white/10 w-full px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#F58220] transition-colors"
               />
               <input
                 type="email"
                 name="email"
                 required
                 placeholder="Your email"
-                className="bg-[#f7f8f9] w-full px-6 py-4 text-gray-700 focus:outline-none focus:ring-1 focus:ring-[#13363B] transition-colors"
+                className="bg-white/5 backdrop-blur-md border border-white/10 w-full px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#F58220] transition-colors"
               />
             </div>
 
@@ -121,13 +121,13 @@ export default function ContactPage() {
                 type="tel"
                 name="phone"
                 placeholder="Your Phone"
-                className="bg-[#f7f8f9] w-full px-6 py-4 text-gray-700 focus:outline-none focus:ring-1 focus:ring-[#13363B] transition-colors"
+                className="bg-white/5 backdrop-blur-md border border-white/10 w-full px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#F58220] transition-colors"
               />
               <input
                 type="text"
                 name="_subject"
                 placeholder="Subject"
-                className="bg-[#f7f8f9] w-full px-6 py-4 text-gray-700 focus:outline-none focus:ring-1 focus:ring-[#13363B] transition-colors"
+                className="bg-white/5 backdrop-blur-md border border-white/10 w-full px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#F58220] transition-colors"
               />
             </div>
 
@@ -136,11 +136,11 @@ export default function ContactPage() {
               required
               placeholder="Your Message"
               rows={6}
-              className="bg-[#f7f8f9] w-full px-6 py-4 text-gray-700 focus:outline-none focus:ring-1 focus:ring-[#13363B] transition-colors resize-none"
+              className="bg-white/5 backdrop-blur-md border border-white/10 w-full px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#F58220] transition-colors resize-none"
             ></textarea>
 
             <div>
-              <button disabled={isSubmitting} type="submit" className="bg-[#13363B] hover:bg-[#0C2225] disabled:opacity-70 text-white font-semibold text-sm px-8 py-4 transition-colors">
+              <button disabled={isSubmitting} type="submit" className="bg-[#F58220] hover:bg-[#D96E18] disabled:opacity-70 text-white font-semibold text-sm px-8 py-4 transition-colors">
                 {isSubmitting ? "SENDING..." : "SEND A MESSAGE"}
               </button>
             </div>
@@ -150,7 +150,7 @@ export default function ContactPage() {
       </section>
 
       {/* Map Section */}
-      <section className="w-full h-[400px] bg-gray-200">
+      <section className="w-full h-[400px] bg-black/20 relative z-10 border-t border-white/10">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114584.73585324545!2d27.977464299863412!3d-26.09361138407028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9573ec31d87e19%3A0xc682390a3de059e9!2sSandton%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1700000000000!5m2!1sen!2sza"
           width="100%"

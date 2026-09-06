@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from 'next'
 import { Open_Sans, Montserrat } from 'next/font/google'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import HoneycombBackground from '../components/HoneycombBackground'
 import './globals.css'
 
 const openSans = Open_Sans({
@@ -44,7 +45,8 @@ export default function RootLayout({
       <head>
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
       </head>
-      <body className={`${openSans.variable} ${montserrat.variable} antialiased bg-background text-foreground font-body min-h-screen flex flex-col relative overflow-x-hidden`}>
+      <body className={`${openSans.variable} ${montserrat.variable} antialiased font-body min-h-screen flex flex-col relative overflow-x-hidden`}>
+        <HoneycombBackground />
         <Navbar />
         <main className="flex-grow z-10 pt-[100px] w-full flex flex-col">
           {children}

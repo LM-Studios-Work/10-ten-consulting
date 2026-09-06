@@ -33,11 +33,11 @@ export default function FAQ() {
       {faqs.map((faq, index) => {
         const isOpen = openIndex === index;
         return (
-          <div key={index} className="border border-gray-800 rounded bg-[#2a2a2a] overflow-hidden">
+          <div key={index} className="border border-white/10 rounded-xl bg-white/5 backdrop-blur-md overflow-hidden">
             <button
               onClick={() => toggleFAQ(index)}
               className={`w-full flex items-center justify-between p-4 text-left font-semibold transition-colors ${
-                isOpen ? 'bg-[#13363B] text-white' : 'bg-[#1a1a1a] text-gray-200 hover:bg-[#252525]'
+                isOpen ? 'bg-white/10 text-white' : 'bg-transparent text-gray-200 hover:bg-white/5'
               }`}
             >
               {faq.question}
@@ -47,7 +47,7 @@ export default function FAQ() {
             </button>
             <div
               className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                isOpen ? 'max-h-40 opacity-100 p-4 bg-[#1a1a1a] text-gray-300' : 'max-h-0 opacity-0 px-4 py-0'
+                isOpen ? 'max-h-40 opacity-100 p-4 bg-black/20 text-gray-300' : 'max-h-0 opacity-0 px-4 py-0 bg-transparent'
               }`}
             >
               <p>{faq.answer}</p>
