@@ -34,18 +34,17 @@ export default function Footer() {
         {/* Column 3: Our Services */}
         <div className="flex flex-col gap-4">
           <h4 className="text-white font-bold uppercase tracking-wider text-sm mb-2">OUR SERVICES</h4>
-          <Link className="text-gray-400 hover:text-white transition-colors" href="/services">Sage Intacct Licensing</Link>
+          <Link className="text-gray-400 hover:text-white transition-colors" href="/services">Sage Intacct</Link>
           <Link className="text-gray-400 hover:text-white transition-colors" href="/services">Payroll & HR</Link>
           <Link className="text-gray-400 hover:text-white transition-colors" href="/services">Outsourced Accounting</Link>
-          <Link className="text-gray-400 hover:text-white transition-colors" href="/services">Advisory & Strategy</Link>
         </div>
 
         {/* Column 4: Contact */}
         <div className="flex flex-col gap-4">
           <h4 className="text-white font-bold uppercase tracking-wider text-sm mb-2">CONTACT</h4>
           <div className="flex gap-3 text-gray-400">
-             <span className="material-symbols-outlined text-sm mt-0.5">location_on</span>
-             <span>Johannesburg, Gauteng</span>
+             <span className="material-symbols-outlined text-sm mt-0.5 flex-shrink-0">location_on</span>
+             <span>Ground Floor, Mac Mac Building, Maxwell Office Park, Magwa Cres, Waterval City, Midrand, 2090, South Africa</span>
           </div>
           <div className="flex gap-3 text-gray-400">
              <span className="material-symbols-outlined text-sm mt-0.5">mail</span>

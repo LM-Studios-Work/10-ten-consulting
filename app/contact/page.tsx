@@ -61,7 +61,7 @@ export default function ContactPage() {
               </div>
               <div className="pt-1">
                 <h5 className="text-gray-400 text-xs font-semibold tracking-wider uppercase mb-1">CALL ANYTIME</h5>
-                <p className="text-gray-300 font-medium text-lg">(+27) 87 265 2800 / (+27) 74 480 4212</p>
+                <p className="text-gray-300 font-medium text-lg">(+27) 87 265 2800 / (+27) 79 541 4454</p>
               </div>
             </div>
 
@@ -83,7 +83,7 @@ export default function ContactPage() {
               </div>
               <div className="pt-1">
                 <h5 className="text-gray-400 text-xs font-semibold tracking-wider uppercase mb-1">VISIT OFFICE</h5>
-                <p className="text-gray-300 font-medium text-lg max-w-xs">Johannesburg, Gauteng, South Africa</p>
+                <p className="text-gray-300 font-medium text-lg max-w-sm">Ground Floor, Mac Mac Building, Maxwell Office Park, Magwa Cres, Waterval City, Midrand, 2090, South Africa</p>
               </div>
             </div>
           </div>
@@ -104,7 +104,7 @@ export default function ContactPage() {
                 type="text"
                 name="name"
                 required
-                placeholder="Your name"
+                placeholder="Full name"
                 className="bg-white/5 backdrop-blur-md border border-white/10 w-full px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#F58220] transition-colors"
               />
               <input
@@ -118,17 +118,76 @@ export default function ContactPage() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
               <input
+                type="text"
+                name="company"
+                placeholder="Company name"
+                className="bg-white/5 backdrop-blur-md border border-white/10 w-full px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#F58220] transition-colors"
+              />
+              <div className="relative w-full">
+                <select
+                  name="employees"
+                  defaultValue=""
+                  className="bg-white/5 backdrop-blur-md border border-white/10 w-full px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#F58220] transition-colors appearance-none"
+                >
+                  <option value="" disabled className="text-black">Number of Employees</option>
+                  <option value="1-20" className="text-black">1-20</option>
+                  <option value="21-50" className="text-black">21-50</option>
+                  <option value="51-500" className="text-black">51-500</option>
+                  <option value="501+" className="text-black">501+</option>
+                </select>
+                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-white">
+                  <span className="material-symbols-outlined">expand_more</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
+              <input
                 type="tel"
                 name="phone"
                 placeholder="Your Phone"
                 className="bg-white/5 backdrop-blur-md border border-white/10 w-full px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#F58220] transition-colors"
               />
-              <input
-                type="text"
-                name="_subject"
-                placeholder="Subject"
-                className="bg-white/5 backdrop-blur-md border border-white/10 w-full px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#F58220] transition-colors"
-              />
+              <div className="relative w-full">
+                <select
+                  name="industry"
+                  defaultValue=""
+                  className="bg-white/5 backdrop-blur-md border border-white/10 w-full px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#F58220] transition-colors appearance-none"
+                >
+                  <option value="" disabled className="text-black">Industry</option>
+                  <option value="Business Services" className="text-black">Business Services</option>
+                  <option value="Financial Services" className="text-black">Financial Services</option>
+                  <option value="Professional Services" className="text-black">Professional Services</option>
+                  <option value="Not for Profit" className="text-black">Not for Profit</option>
+                  <option value="Retail" className="text-black">Retail</option>
+                  <option value="Manufacturing" className="text-black">Manufacturing</option>
+                  <option value="Wholesale Distribution" className="text-black">Wholesale Distribution</option>
+                  <option value="Technology and Software" className="text-black">Technology and Software</option>
+                  <option value="Government - Public Administration" className="text-black">Government - Public Administration</option>
+                  <option value="Other" className="text-black">Other</option>
+                </select>
+                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-white">
+                  <span className="material-symbols-outlined">expand_more</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="w-full">
+              <div className="relative w-full">
+                <select
+                  name="products_services"
+                  defaultValue=""
+                  className="bg-white/5 backdrop-blur-md border border-white/10 w-full px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#F58220] transition-colors appearance-none"
+                >
+                  <option value="" disabled className="text-black">Select the solution you are interested in</option>
+                  <option value="Sage Intacct" className="text-black">Sage Intacct</option>
+                  <option value="Sage 300 People & HR" className="text-black">Sage 300 People & HR</option>
+                  <option value="Accounting Services" className="text-black">Accounting Services</option>
+                </select>
+                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-white">
+                  <span className="material-symbols-outlined">expand_more</span>
+                </div>
+              </div>
             </div>
 
             <textarea
