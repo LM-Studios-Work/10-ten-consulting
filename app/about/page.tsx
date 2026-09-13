@@ -24,11 +24,11 @@ export default function AboutPage() {
       </section>
 
       {/* Intro Section */}
-      <section className="py-24 px-8 max-w-container-max mx-auto w-full">
+      <section className="py-24 px-8 max-w-container-max mx-auto w-full relative z-10">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           <div className="lg:w-1/2 flex flex-col gap-6">
-            <h2 className="text-3xl lg:text-4xl font-bold text-[#001b3c]">About Us</h2>
-            <p className="text-gray-600 leading-relaxed text-lg">
+            <h2 className="text-3xl lg:text-4xl font-bold text-white">About Us</h2>
+            <p className="text-gray-300 leading-relaxed text-lg">
               We are a proudly South African consulting and professional services firm specialising in Sage Intacct implementation and licensing, Payroll & HR solutions, and Outsourced Accounting Services. We work with organisations that want to improve the way they manage their financial information, business processes, people, and day-to-day operations through practical technology and professional expertise.
             </p>
             
@@ -38,8 +38,8 @@ export default function AboutPage() {
                   <span className="material-symbols-outlined text-[#F58220] text-3xl">lightbulb</span>
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-[#001b3c]">Technology + Accounting</h4>
-                  <p className="text-gray-600 mt-2">We bridge the gap between technology capabilities and practical accounting requirements.</p>
+                  <h4 className="text-xl font-bold text-white">Technology + Accounting</h4>
+                  <p className="text-gray-300 mt-2">We bridge the gap between technology capabilities and practical accounting requirements.</p>
                 </div>
               </div>
               
@@ -48,8 +48,8 @@ export default function AboutPage() {
                   <span className="material-symbols-outlined text-[#F58220] text-3xl">handshake</span>
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-[#001b3c]">Client-Centric Support</h4>
-                  <p className="text-gray-600 mt-2">We approach every engagement with professionalism, accountability, and respect for our clients' businesses.</p>
+                  <h4 className="text-xl font-bold text-white">Client-Centric Support</h4>
+                  <p className="text-gray-300 mt-2">We approach every engagement with professionalism, accountability, and respect for our clients' businesses.</p>
                 </div>
               </div>
             </div>
@@ -66,7 +66,7 @@ export default function AboutPage() {
       </section>
 
       {/* Leadership Section */}
-      <section className="bg-[#112224] py-24 px-8 w-full">
+      <section className="py-24 px-8 w-full border-y border-white/10 relative z-10">
         <div className="max-w-container-max mx-auto flex flex-col lg:flex-row gap-16 items-center">
           <div className="lg:w-1/3">
             <img 
@@ -91,13 +91,13 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="w-full">
+      <section className="w-full relative z-10">
         {/* Mission */}
         <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-1/2 bg-white flex items-center justify-center p-16 lg:p-24">
+          <div className="lg:w-1/2 bg-white/5 backdrop-blur-md flex items-center justify-center p-16 lg:p-24 border border-white/10">
             <div className="max-w-lg">
-              <h2 className="text-3xl lg:text-4xl font-bold text-[#001b3c] mb-6">Our Mission</h2>
-              <p className="text-gray-600 leading-relaxed text-lg">
+              <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">Our Mission</h2>
+              <p className="text-gray-300 leading-relaxed text-lg">
                 To empower organisations with practical technology solutions and professional expertise that simplify complexity, enable better decisions, and drive sustainable long-term success.
               </p>
             </div>
@@ -109,10 +109,10 @@ export default function AboutPage() {
         
         {/* Vision */}
         <div className="flex flex-col lg:flex-row-reverse">
-          <div className="lg:w-1/2 bg-white flex items-center justify-center p-16 lg:p-24">
+          <div className="lg:w-1/2 bg-white/5 backdrop-blur-md flex items-center justify-center p-16 lg:p-24 border border-white/10">
             <div className="max-w-lg">
-              <h2 className="text-3xl lg:text-4xl font-bold text-[#001b3c] mb-6">Our Vision</h2>
-              <p className="text-gray-600 leading-relaxed text-lg">
+              <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">Our Vision</h2>
+              <p className="text-gray-300 leading-relaxed text-lg">
                 To become the foremost consulting firm in South Africa and a global benchmark for excellence, seamlessly blending local expertise with innovative technological solutions.
               </p>
             </div>
@@ -124,69 +124,69 @@ export default function AboutPage() {
       </section>
 
       {/* Core Values */}
-      <section className="bg-gray-50 py-24 px-8 w-full">
+      <section className="py-24 px-8 w-full relative z-10 border-b border-white/10">
         <div className="max-w-container-max mx-auto flex flex-col items-center">
           <span className="text-[#F58220] font-semibold tracking-wider text-sm mb-4">Values</span>
-          <h2 className="text-3xl lg:text-4xl font-bold text-[#001b3c] text-center max-w-2xl mb-16 leading-tight">
+          <h2 className="text-3xl lg:text-4xl font-bold text-white text-center max-w-2xl mb-16 leading-tight">
             At 10TEN, Our Core Values Guide Every Decision
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
             {/* Value 1 */}
-            <div className="bg-white p-10 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-              <span className="material-symbols-outlined text-[#F58220] mb-6" style={{ fontSize: '48px' }}>workspace_premium</span>
-              <h3 className="text-xl font-bold text-[#001b3c] mb-4">Trust</h3>
-              <p className="text-gray-600">We build confidence through transparency and ethical conduct in every engagement.</p>
+            <div className="bg-white/5 backdrop-blur-md p-10 rounded-xl shadow-sm border border-white/10 hover:shadow-lg transition-shadow">
+              <span className="material-symbols-outlined text-[#3D99A6] mb-6" style={{ fontSize: '48px' }}>workspace_premium</span>
+              <h3 className="text-xl font-bold text-white mb-4">Trust</h3>
+              <p className="text-gray-300">We build confidence through transparency and ethical conduct in every engagement.</p>
             </div>
             
             {/* Value 2 */}
-            <div className="bg-white p-10 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-              <span className="material-symbols-outlined text-[#F58220] mb-6" style={{ fontSize: '48px' }}>public</span>
-              <h3 className="text-xl font-bold text-[#001b3c] mb-4">Responsiveness</h3>
-              <p className="text-gray-600">We remain agile to address client needs promptly and effectively.</p>
+            <div className="bg-white/5 backdrop-blur-md p-10 rounded-xl shadow-sm border border-white/10 hover:shadow-lg transition-shadow">
+              <span className="material-symbols-outlined text-[#3D99A6] mb-6" style={{ fontSize: '48px' }}>public</span>
+              <h3 className="text-xl font-bold text-white mb-4">Responsiveness</h3>
+              <p className="text-gray-300">We remain agile to address client needs promptly and effectively.</p>
             </div>
             
             {/* Value 3 */}
-            <div className="bg-white p-10 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-              <span className="material-symbols-outlined text-[#F58220] mb-6" style={{ fontSize: '48px' }}>verified_user</span>
-              <h3 className="text-xl font-bold text-[#001b3c] mb-4">Integrity</h3>
-              <p className="text-gray-600">Upholding honesty and professionalism in all our operations and client interactions.</p>
+            <div className="bg-white/5 backdrop-blur-md p-10 rounded-xl shadow-sm border border-white/10 hover:shadow-lg transition-shadow">
+              <span className="material-symbols-outlined text-[#3D99A6] mb-6" style={{ fontSize: '48px' }}>verified_user</span>
+              <h3 className="text-xl font-bold text-white mb-4">Integrity</h3>
+              <p className="text-gray-300">Upholding honesty and professionalism in all our operations and client interactions.</p>
             </div>
             
             {/* Value 4 */}
-            <div className="bg-white p-10 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-              <span className="material-symbols-outlined text-[#F58220] mb-6" style={{ fontSize: '48px' }}>diamond</span>
-              <h3 className="text-xl font-bold text-[#001b3c] mb-4">Excellence</h3>
-              <p className="text-gray-600">We maintain the highest standards across all our services and solutions.</p>
+            <div className="bg-white/5 backdrop-blur-md p-10 rounded-xl shadow-sm border border-white/10 hover:shadow-lg transition-shadow">
+              <span className="material-symbols-outlined text-[#3D99A6] mb-6" style={{ fontSize: '48px' }}>diamond</span>
+              <h3 className="text-xl font-bold text-white mb-4">Excellence</h3>
+              <p className="text-gray-300">We maintain the highest standards across all our services and solutions.</p>
             </div>
             
             {/* Value 5 */}
-            <div className="bg-white p-10 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-              <span className="material-symbols-outlined text-[#F58220] mb-6" style={{ fontSize: '48px' }}>diversity_3</span>
-              <h3 className="text-xl font-bold text-[#001b3c] mb-4">Collaboration</h3>
-              <p className="text-gray-600">We form strong partnerships with clients, working together for shared success.</p>
+            <div className="bg-white/5 backdrop-blur-md p-10 rounded-xl shadow-sm border border-white/10 hover:shadow-lg transition-shadow">
+              <span className="material-symbols-outlined text-[#3D99A6] mb-6" style={{ fontSize: '48px' }}>diversity_3</span>
+              <h3 className="text-xl font-bold text-white mb-4">Collaboration</h3>
+              <p className="text-gray-300">We form strong partnerships with clients, working together for shared success.</p>
             </div>
             
             {/* Value 6 */}
-            <div className="bg-white p-10 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-              <span className="material-symbols-outlined text-[#F58220] mb-6" style={{ fontSize: '48px' }}>tips_and_updates</span>
-              <h3 className="text-xl font-bold text-[#001b3c] mb-4">Innovation</h3>
-              <p className="text-gray-600">Continuously seeking new ideas and cutting-edge solutions to stay ahead.</p>
+            <div className="bg-white/5 backdrop-blur-md p-10 rounded-xl shadow-sm border border-white/10 hover:shadow-lg transition-shadow">
+              <span className="material-symbols-outlined text-[#3D99A6] mb-6" style={{ fontSize: '48px' }}>tips_and_updates</span>
+              <h3 className="text-xl font-bold text-white mb-4">Innovation</h3>
+              <p className="text-gray-300">Continuously seeking new ideas and cutting-edge solutions to stay ahead.</p>
             </div>
           </div>
         </div>
       </section>
       
       {/* Expertise & CTA */}
-      <section className="py-24 px-8 max-w-container-max mx-auto w-full">
+      <section className="py-24 px-8 max-w-container-max mx-auto w-full relative z-10">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           <div className="lg:w-1/2 flex flex-col gap-8">
-            <h2 className="text-3xl lg:text-4xl font-bold text-[#001b3c]">Expertise</h2>
-            <p className="text-gray-600 leading-relaxed text-lg">
+            <h2 className="text-3xl lg:text-4xl font-bold text-white">Expertise</h2>
+            <p className="text-gray-300 leading-relaxed text-lg">
               With a team of certified professionals and a legacy of success, 10TEN Consulting offers deep industry knowledge in software implementation, outsourced accounting, and business strategy. Our multidisciplinary approach ensures clients benefit from integrated solutions that uphold compliance and drive strategic growth.
             </p>
             <div>
-              <Link href="/contact" className="inline-block bg-[#13363B] hover:bg-[#0C2225] text-white font-semibold px-8 py-4 rounded transition-colors shadow-lg hover:shadow-xl">
+              <Link href="/contact" className="inline-block bg-[#F58220] hover:bg-[#D96E18] text-white font-semibold px-8 py-4 rounded transition-colors shadow-lg hover:shadow-xl">
                 GET A CONSULTATION
               </Link>
             </div>

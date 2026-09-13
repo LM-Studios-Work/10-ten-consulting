@@ -39,18 +39,18 @@ export default function IndustriesPage() {
       </section>
 
       {/* Main Content */}
-      <section className="py-24 px-8 max-w-container-max mx-auto w-full">
+      <section className="py-24 px-8 max-w-container-max mx-auto w-full relative z-10">
         <div className="flex flex-col lg:flex-row gap-16 items-center mb-24">
           <div className="w-full lg:w-1/2 flex flex-col gap-6">
-            <h2 className="text-3xl lg:text-4xl font-bold text-[#001b3c]">Your Industry is Unique</h2>
-            <p className="text-gray-600 leading-relaxed text-lg">
+            <h2 className="text-3xl lg:text-4xl font-bold text-white">Your Industry is Unique</h2>
+            <p className="text-gray-300 leading-relaxed text-lg">
               At 10TEN Consulting Services, we understand that every industry operates differently. The financial processes, operational requirements, reporting needs, compliance considerations, and technology challenges of a software business are different from those of a healthcare organisation, professional services firm, retailer, or construction company.
             </p>
-            <p className="text-gray-600 leading-relaxed text-lg">
+            <p className="text-gray-300 leading-relaxed text-lg">
               That is why we take an industry-focused approach to our solutions. Rather than applying a one-size-fits-all model, we take the time to understand the unique characteristics of your industry, the way your organisation operates, and the challenges you face. We then align our accounting technology, payroll and HR, and outsourced finance solutions with those requirements.
             </p>
           </div>
-          <div className="w-full lg:w-1/2 bg-[#13363B] p-12 rounded-xl flex items-center justify-center relative overflow-hidden shadow-2xl">
+          <div className="w-full lg:w-1/2 bg-white/5 backdrop-blur-md border border-white/10 p-12 rounded-xl flex items-center justify-center relative overflow-hidden shadow-2xl">
              <p className="text-2xl font-medium text-white text-center italic relative z-10 leading-relaxed">
                "Our goal is to help organisations in diverse industries simplify complexity, improve financial visibility, strengthen processes, and create scalable foundations for growth."
              </p>
@@ -59,29 +59,29 @@ export default function IndustriesPage() {
 
         {/* Industries Grid */}
         <div className="mb-24">
-          <h2 className="text-3xl lg:text-4xl font-bold text-[#001b3c] text-center mb-16">Industries We Serve</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold text-white text-center mb-16">Industries We Serve</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {industries.map((industry, index) => (
-              <div key={index} className="bg-white p-10 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center justify-center text-center gap-6 hover:shadow-lg hover:-translate-y-1 transition-all group">
-                <span className="material-symbols-outlined text-6xl text-[#F58220] font-bold group-hover:text-[#13363B] transition-colors duration-300" style={{ fontVariationSettings: "'FILL' 0, 'wght' 600, 'GRAD' 0, 'opsz' 48" }}>
+              <div key={index} className="bg-white/5 backdrop-blur-md p-10 rounded-xl shadow-sm border border-white/10 flex flex-col items-center justify-center text-center gap-6 hover:shadow-lg hover:bg-white/10 hover:-translate-y-1 transition-all group">
+                <span className="material-symbols-outlined text-6xl text-[#F58220] font-bold group-hover:text-white transition-colors duration-300" style={{ fontVariationSettings: "'FILL' 0, 'wght' 600, 'GRAD' 0, 'opsz' 48" }}>
                   {industry.icon}
                 </span>
-                <h4 className="text-xl font-bold text-[#001b3c]">{industry.name}</h4>
+                <h4 className="text-xl font-bold text-white">{industry.name}</h4>
               </div>
             ))}
           </div>
         </div>
 
-        <div className="text-center max-w-4xl mx-auto bg-gray-50 p-12 rounded-xl border border-gray-100">
-          <p className="text-gray-600 leading-relaxed text-lg mb-6">
+        <div className="text-center max-w-4xl mx-auto bg-black/20 backdrop-blur-md p-12 rounded-xl border border-white/10">
+          <p className="text-gray-300 leading-relaxed text-lg mb-6">
             Whether you operate in a highly specialised sector or a rapidly evolving market, we bring a combination of accounting expertise, business understanding, and technology capability to help your organisation operate more effectively.
           </p>
-          <h3 className="text-2xl font-bold text-[#13363B]">Your industry is unique. Your solution should be too.</h3>
+          <h3 className="text-2xl font-bold text-[#F58220]">Your industry is unique. Your solution should be too.</h3>
         </div>
       </section>
       
       {/* CTA Section */}
-      <section className="bg-[#112224] py-20 px-8 w-full text-center">
+      <section className="py-20 px-8 w-full text-center border-t border-white/10 relative z-10">
         <h2 className="text-3xl font-bold text-white mb-6">Discuss Your Industry Challenges</h2>
         <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
           Contact us today to find out how our industry-specific expertise can help your organisation.

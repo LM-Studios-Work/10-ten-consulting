@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <footer className="bg-[#112224] w-full pt-16 pb-8 px-8 border-t border-gray-800 text-sm relative z-20 mt-auto">
+    <footer className="bg-black/40 backdrop-blur-md w-full pt-16 pb-8 px-8 border-t border-white/10 text-sm relative z-20 mt-auto">
       <div className="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         {/* Column 1: Logo & Info */}
         <div className="flex flex-col gap-4">
@@ -34,18 +34,17 @@ export default function Footer() {
         {/* Column 3: Our Services */}
         <div className="flex flex-col gap-4">
           <h4 className="text-white font-bold uppercase tracking-wider text-sm mb-2">OUR SERVICES</h4>
-          <Link className="text-gray-400 hover:text-white transition-colors" href="/services">Sage Intacct Licensing</Link>
+          <Link className="text-gray-400 hover:text-white transition-colors" href="/services">Sage Intacct</Link>
           <Link className="text-gray-400 hover:text-white transition-colors" href="/services">Payroll & HR</Link>
           <Link className="text-gray-400 hover:text-white transition-colors" href="/services">Outsourced Accounting</Link>
-          <Link className="text-gray-400 hover:text-white transition-colors" href="/services">Advisory & Strategy</Link>
         </div>
 
         {/* Column 4: Contact */}
         <div className="flex flex-col gap-4">
           <h4 className="text-white font-bold uppercase tracking-wider text-sm mb-2">CONTACT</h4>
           <div className="flex gap-3 text-gray-400">
-             <span className="material-symbols-outlined text-sm mt-0.5">location_on</span>
-             <span>Johannesburg, Gauteng</span>
+             <span className="material-symbols-outlined text-sm mt-0.5 flex-shrink-0">location_on</span>
+             <span>Ground Floor, Mac Mac Building, Maxwell Office Park, Magwa Cres, Waterval City, Midrand, 2090, South Africa</span>
           </div>
           <div className="flex gap-3 text-gray-400">
              <span className="material-symbols-outlined text-sm mt-0.5">mail</span>

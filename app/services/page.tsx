@@ -28,37 +28,37 @@ export default function ServicesPage() {
       </section>
 
       {/* Intro */}
-      <section className="py-24 px-8 max-w-container-max mx-auto w-full text-center">
-        <p className="text-gray-600 leading-relaxed text-xl max-w-4xl mx-auto">
+      <section className="py-24 px-8 max-w-container-max mx-auto w-full text-center relative z-10">
+        <p className="text-gray-300 leading-relaxed text-xl max-w-4xl mx-auto">
           At 10TEN Consulting Services, we provide professional technology, accounting, payroll, and business solutions designed to help organisations improve efficiency, strengthen financial management, and support sustainable growth.
         </p>
       </section>
 
       {/* Services List */}
-      <section className="w-full pb-24">
+      <section className="w-full pb-24 relative z-10">
 
         {/* Service 1 */}
-        <div className="flex flex-col lg:flex-row w-full bg-white">
+        <div className="flex flex-col lg:flex-row w-full bg-black/40 border-y border-white/10">
           <div className="lg:w-1/2 p-12 lg:p-24 flex flex-col justify-center">
             <div className="flex items-center gap-4 mb-6">
               <span className="material-symbols-outlined text-[#F58220] text-4xl">account_tree</span>
-              <h2 className="text-3xl font-bold text-[#001b3c]">Sage Intacct Licensing & Implementation</h2>
+              <h2 className="text-3xl font-bold text-white">Sage Intacct Licensing & Implementation</h2>
             </div>
-            <p className="text-gray-600 mb-8 text-lg">
+            <p className="text-gray-300 mb-8 text-lg">
               Modernise Your Financial Management. Sage Intacct is a powerful cloud-based financial management platform designed to give organisations greater visibility, control, automation, and scalability.
             </p>
             <div className="flex flex-col gap-6">
               <div>
-                <h4 className="font-bold text-[#001b3c] mb-2 text-lg">Licensing & Strategy</h4>
-                <ul className="space-y-2 text-gray-600">
+                <h4 className="font-bold text-white mb-2 text-lg">Licensing & Strategy</h4>
+                <ul className="space-y-2 text-gray-300">
                   <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Product selection & user requirements</li>
                   <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Entity & module requirements</li>
                   <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Expansion considerations</li>
                 </ul>
               </div>
               <div>
-                <h4 className="font-bold text-[#001b3c] mb-2 text-lg">Implementation & Support</h4>
-                <ul className="space-y-2 text-gray-600">
+                <h4 className="font-bold text-white mb-2 text-lg">Implementation & Support</h4>
+                <ul className="space-y-2 text-gray-300">
                   <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Requirements gathering & solution design</li>
                   <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Data migration & system testing</li>
                   <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> User training & go-live support</li>
@@ -72,27 +72,27 @@ export default function ServicesPage() {
         </div>
 
         {/* Service 2 */}
-        <div className="flex flex-col lg:flex-row-reverse w-full bg-gray-50">
+        <div className="flex flex-col lg:flex-row-reverse w-full bg-black/40 border-b border-white/10">
           <div className="lg:w-1/2 p-12 lg:p-24 flex flex-col justify-center">
             <div className="flex items-center gap-4 mb-6">
               <span className="material-symbols-outlined text-[#F58220] text-4xl">groups</span>
-              <h2 className="text-3xl font-bold text-[#001b3c]">Payroll & HR</h2>
+              <h2 className="text-3xl font-bold text-white">Payroll & HR</h2>
             </div>
-            <p className="text-gray-600 mb-8 text-lg">
+            <p className="text-gray-300 mb-8 text-lg">
               Empower Your People. Simplify Your Processes. Managing payroll and HR effectively requires accurate information, reliable processes, strong controls, and technology that can support your organisation as it grows.
             </p>
             <div className="flex flex-col gap-6">
               <div>
-                <h4 className="font-bold text-[#001b3c] mb-2 text-lg">Payroll Solutions</h4>
-                <ul className="space-y-2 text-gray-600">
+                <h4 className="font-bold text-white mb-2 text-lg">Payroll Solutions</h4>
+                <ul className="space-y-2 text-gray-300">
                   <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Payroll processing & administration</li>
                   <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Leave management & reporting</li>
                   <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Statutory requirements & controls</li>
                 </ul>
               </div>
               <div>
-                <h4 className="font-bold text-[#001b3c] mb-2 text-lg">HR Solutions</h4>
-                <ul className="space-y-2 text-gray-600">
+                <h4 className="font-bold text-white mb-2 text-lg">HR Solutions</h4>
+                <ul className="space-y-2 text-gray-300">
                   <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Employee information management</li>
                   <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> HR administration & reporting</li>
                   <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Employee lifecycle administration</li>
@@ -106,27 +106,27 @@ export default function ServicesPage() {
         </div>
 
         {/* Service 3 */}
-        <div className="flex flex-col lg:flex-row w-full bg-white">
+        <div className="flex flex-col lg:flex-row w-full bg-black/40 border-b border-white/10">
           <div className="lg:w-1/2 p-12 lg:p-24 flex flex-col justify-center">
             <div className="flex items-center gap-4 mb-6">
               <span className="material-symbols-outlined text-[#F58220] text-4xl">finance</span>
-              <h2 className="text-3xl font-bold text-[#001b3c]">Outsourced Accounting</h2>
+              <h2 className="text-3xl font-bold text-white">Outsourced Accounting</h2>
             </div>
-            <p className="text-gray-600 mb-8 text-lg">
+            <p className="text-gray-300 mb-8 text-lg">
               Your Finance Function. Our Expertise. We provide businesses access to professional financial support while allowing management to focus on running and growing the business.
             </p>
             <div className="flex flex-col gap-6">
               <div>
-                <h4 className="font-bold text-[#001b3c] mb-2 text-lg">Bookkeeping & Reconciliations</h4>
-                <ul className="space-y-2 text-gray-600">
+                <h4 className="font-bold text-white mb-2 text-lg">Bookkeeping & Reconciliations</h4>
+                <ul className="space-y-2 text-gray-300">
                   <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> General ledger management</li>
                   <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Accounts payable & receivable</li>
                   <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Bank & supplier reconciliations</li>
                 </ul>
               </div>
               <div>
-                <h4 className="font-bold text-[#001b3c] mb-2 text-lg">Reporting & Analysis</h4>
-                <ul className="space-y-2 text-gray-600">
+                <h4 className="font-bold text-white mb-2 text-lg">Reporting & Analysis</h4>
+                <ul className="space-y-2 text-gray-300">
                   <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Management accounts & financial reporting</li>
                   <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Budgeting & cash-flow forecasting</li>
                   <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Month-end close support</li>
@@ -140,19 +140,19 @@ export default function ServicesPage() {
         </div>
 
         {/* Service 4 */}
-        <div className="flex flex-col lg:flex-row-reverse w-full bg-gray-50">
+        <div className="flex flex-col lg:flex-row-reverse w-full bg-black/40 border-b border-white/10">
           <div className="lg:w-1/2 p-12 lg:p-24 flex flex-col justify-center">
             <div className="flex items-center gap-4 mb-6">
               <span className="material-symbols-outlined text-[#F58220] text-4xl">lightbulb</span>
-              <h2 className="text-3xl font-bold text-[#001b3c]">Advisory & Strategy</h2>
+              <h2 className="text-3xl font-bold text-white">Advisory & Strategy</h2>
             </div>
-            <p className="text-gray-600 mb-8 text-lg">
+            <p className="text-gray-300 mb-8 text-lg">
               Navigate Complexity with Confidence. We help you map out the future of your financial ecosystem, identifying opportunities for growth, integration, and strategic cost-reduction.
             </p>
             <div className="flex flex-col gap-6">
               <div>
-                <h4 className="font-bold text-[#001b3c] mb-2 text-lg">Process Optimisation</h4>
-                <ul className="space-y-2 text-gray-600">
+                <h4 className="font-bold text-white mb-2 text-lg">Process Optimisation</h4>
+                <ul className="space-y-2 text-gray-300">
                   <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> System integrations</li>
                   <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Operational assessments</li>
                   <li className="flex items-start gap-2"><span className="material-symbols-outlined text-[#F58220] text-sm mt-1">check</span> Strategic planning</li>
@@ -168,19 +168,19 @@ export default function ServicesPage() {
       </section>
 
       {/* Request a Demo Section */}
-      <section className="bg-gray-50 py-24 px-8 w-full border-t border-gray-200">
+      <section className="bg-black/60 py-24 px-8 w-full border-t border-white/10 relative z-10">
         <div className="max-w-container-max mx-auto flex flex-col lg:flex-row gap-16">
           {/* Info Column */}
           <div className="w-full lg:w-1/2 flex flex-col gap-8 lg:pr-4">
             <div>
-              <h4 className="text-[#13363B] font-semibold text-lg mb-2 uppercase tracking-wide">Get In Touch</h4>
-              <h2 className="text-4xl font-bold text-[#001b3c] mb-6 leading-tight">Let's Talk About Your Business.</h2>
+              <h4 className="text-[#F58220] font-semibold text-lg mb-2 uppercase tracking-wide">Get In Touch</h4>
+              <h2 className="text-4xl font-bold text-white mb-6 leading-tight">Let's Talk About Your Business.</h2>
 
-              <div className="text-gray-600 flex flex-col gap-4 text-base md:text-lg leading-relaxed">
+              <div className="text-gray-300 flex flex-col gap-4 text-base md:text-lg leading-relaxed">
                 <p>Looking for a better way to manage your accounting, payroll, HR, or financial operations?</p>
-                <p>At <span className="font-semibold text-[#13363B]">10TEN Consulting Services</span>, we believe the best solutions start with a conversation. Tell us a little about your organisation, your role, and what you are looking to achieve, and our team will get in touch to understand your requirements and explore how we can help.</p>
+                <p>At <span className="font-semibold text-white">10TEN Consulting Services</span>, we believe the best solutions start with a conversation. Tell us a little about your organisation, your role, and what you are looking to achieve, and our team will get in touch to understand your requirements and explore how we can help.</p>
                 <p>Whether you are considering Sage Intacct, looking to improve your Payroll & HR environment, or considering Outsourced Accounting Services, we would be happy to discuss your needs and demonstrate how our solutions can support your organisation.</p>
-                <p className="font-medium text-[#001b3c]">Complete the form below and we will be in touch within one business day to arrange a consultation or demonstration.</p>
+                <p className="font-medium text-white">Complete the form below and we will be in touch within one business day to arrange a consultation or demonstration.</p>
               </div>
             </div>
           </div>
