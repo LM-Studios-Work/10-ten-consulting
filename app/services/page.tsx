@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import ServicesForm from '@/components/ServicesForm'
+import ContactForm from '@/components/ContactForm'
 
 export const metadata = {
   title: 'Our Services | 10TEN Consulting Services',
@@ -187,7 +187,7 @@ export default function ServicesPage() {
 
           {/* Form Column */}
           <div className="w-full lg:w-1/2">
-            <ServicesForm />
+            <ContactForm />
           </div>
         </div>
       </section>
