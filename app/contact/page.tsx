@@ -9,7 +9,7 @@ export default function ContactPage() {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden w-full">
         <div className="absolute inset-0 bg-[#13363B] mix-blend-multiply opacity-80 z-10"></div>
         <img
-          src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop"
+          src="/images/contact-screen.jpg"
           alt="Contact Us"
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
@@ -49,7 +49,7 @@ export default function ContactPage() {
               </div>
               <div className="pt-1">
                 <h5 className="text-gray-400 text-xs font-semibold tracking-wider uppercase mb-1">SEND EMAIL</h5>
-                <p className="text-gray-300 font-medium text-lg">info@10tenconsulting.com</p>
+                <p className="text-gray-300 font-medium text-lg">sales@10tenconsulting.com</p>
               </div>
             </div>
 

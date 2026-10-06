@@ -13,7 +13,7 @@ export default function ServicesPage() {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden w-full">
         <div className="absolute inset-0 bg-[#13363B] mix-blend-multiply opacity-80 z-10"></div>
         <img
-          src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop"
+          src="/images/office-discussion.jpg"
           alt="Our Services"
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
@@ -67,7 +67,7 @@ export default function ServicesPage() {
             </div>
           </div>
           <div className="lg:w-1/2 h-[500px] lg:h-auto">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop" alt="Sage Intacct" className="w-full h-full object-cover" />
+            <img src="/images/office-discussion.jpg" alt="Sage Intacct" className="w-full h-full object-cover" />
           </div>
         </div>
 
@@ -101,7 +101,7 @@ export default function ServicesPage() {
             </div>
           </div>
           <div className="lg:w-1/2 h-[500px] lg:h-auto">
-            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop" alt="Payroll and HR" className="w-full h-full object-cover" />
+            <img src="/images/team-meeting.jpg" alt="Payroll and HR" className="w-full h-full object-cover" />
           </div>
         </div>
 
@@ -135,7 +135,7 @@ export default function ServicesPage() {
             </div>
           </div>
           <div className="lg:w-1/2 h-[500px] lg:h-auto">
-            <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2070&auto=format&fit=crop" alt="Outsourced Accounting" className="w-full h-full object-cover" />
+            <img src="/images/office-discussion.jpg" alt="Outsourced Accounting" className="w-full h-full object-cover" />
           </div>
         </div>
 
@@ -161,7 +161,7 @@ export default function ServicesPage() {
             </div>
           </div>
           <div className="lg:w-1/2 h-[500px] lg:h-auto">
-            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop" alt="Advisory Strategy" className="w-full h-full object-cover" />
+            <img src="/images/team-meeting.jpg" alt="Advisory Strategy" className="w-full h-full object-cover" />
           </div>
         </div>
 

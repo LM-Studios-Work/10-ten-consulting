@@ -7,12 +7,15 @@ export default function Footer() {
       <div className="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         {/* Column 1: Logo & Info */}
         <div className="flex flex-col gap-4">
-          <div className="flex items-center mb-4 bg-white/90 p-3 rounded-lg w-fit">
+          <div className="flex items-center mb-2 bg-white/90 p-3 rounded-lg w-fit">
             <Image src="/logo.png" alt="10TEN Consulting Logo" width={180} height={60} className="w-auto h-12 object-contain" />
           </div>
           <p className="text-gray-400">
             10TEN Consulting is a distinguished Financial Consultancy and Corporate Services firm based in South Africa.
           </p>
+          <div className="mt-2 bg-white/90 p-2 rounded-lg w-fit">
+            <Image src="/Sage-Partner-Badge.png" alt="Sage Partner Badge" width={150} height={50} className="w-auto h-10 object-contain" />
+          </div>
           <div className="flex gap-4 mt-2">
              {/* Social placeholders */}
              <a href="#" className="text-gray-400 hover:text-white transition-colors"><span className="material-symbols-outlined text-lg">link</span></a>
@@ -48,7 +51,7 @@ export default function Footer() {
           </div>
           <div className="flex gap-3 text-gray-400">
              <span className="material-symbols-outlined text-sm mt-0.5">mail</span>
-             <span>info@10tenconsulting.com</span>
+             <span>sales@10tenconsulting.com</span>
           </div>
           <div className="flex gap-3 text-gray-400">
              <span className="material-symbols-outlined text-sm mt-0.5">phone</span>

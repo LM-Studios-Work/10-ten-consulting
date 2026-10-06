@@ -14,14 +14,44 @@ export default function IndustriesSlideshow() {
       desc: 'Providing specialized financial advisory and implementation services to streamline recurring revenue recognition and complex reporting.',
     },
     {
-      icon: 'medical_services',
-      title: 'Healthcare',
-      desc: 'Helping healthcare organizations maintain compliance, improve financial visibility, and strengthen processes with robust technology.',
+      icon: 'volunteer_activism',
+      title: 'Nonprofits',
+      desc: 'Empowering nonprofits with transparent fund accounting, grant management, and streamlined reporting.',
     },
     {
       icon: 'business_center',
       title: 'Professional Services',
       desc: 'Enhancing project profitability analysis, time tracking, and resource management for service-based businesses.',
+    },
+    {
+      icon: 'medical_services',
+      title: 'Healthcare',
+      desc: 'Helping healthcare organizations maintain compliance, improve financial visibility, and strengthen processes with robust technology.',
+    },
+    {
+      icon: 'account_balance',
+      title: 'Financial Services',
+      desc: 'Delivering robust multi-entity consolidation, real-time analytics, and strict regulatory compliance.',
+    },
+    {
+      icon: 'restaurant',
+      title: 'Hospitality',
+      desc: 'Optimizing cost control, multi-location reporting, and financial visibility for the hospitality sector.',
+    },
+    {
+      icon: 'domain',
+      title: 'Construction & Real Estate',
+      desc: 'Streamlining project accounting, contract management, and job costing for developers and contractors.',
+    },
+    {
+      icon: 'storefront',
+      title: 'Retail',
+      desc: 'Connecting POS systems with back-office accounting for real-time inventory and revenue tracking.',
+    },
+    {
+      icon: 'local_shipping',
+      title: 'Distribution',
+      desc: 'Enhancing supply chain visibility, inventory management, and operational efficiency across channels.',
     },
   ];
 
@@ -48,15 +78,15 @@ export default function IndustriesSlideshow() {
         {industries.map((industry, i) => (
           <motion.div 
             key={i} 
-            className="bg-white/5 backdrop-blur-md rounded-xl p-8 border border-white/10 flex flex-col gap-4 hover:bg-white/10 transition-colors"
+            className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-12 flex flex-col items-center text-center gap-6 hover:-translate-y-2 transition-transform duration-300 shadow-md hover:bg-white/10"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.5, delay: i * 0.15 }}
           >
-            <span className="material-symbols-outlined text-4xl text-[#F58220]">{industry.icon}</span>
-            <h3 className="text-xl font-bold text-white">{industry.title}</h3>
-            <p className="text-gray-300 text-sm">{industry.desc}</p>
+            <span className="material-symbols-outlined text-7xl text-[#F58220]">{industry.icon}</span>
+            <h3 className="text-2xl font-bold text-white mt-2">{industry.title}</h3>
+            <p className="text-gray-300 text-base">{industry.desc}</p>
           </motion.div>
         ))}
       </div>
@@ -69,16 +99,16 @@ export default function IndustriesSlideshow() {
           </button>
           
           <motion.div 
-            className="bg-white/5 backdrop-blur-md rounded-xl p-6 border border-white/10 flex flex-col gap-4 w-full min-h-[250px] justify-center transition-opacity duration-500"
+            className="bg-white/5 backdrop-blur-md rounded-xl p-10 border border-white/10 flex flex-col items-center text-center gap-6 w-full min-h-[320px] justify-center transition-opacity duration-500 shadow-md"
             key={currentIndex}
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -20 }}
             transition={{ duration: 0.3 }}
           >
-            <span className="material-symbols-outlined text-4xl text-[#F58220]">{industries[currentIndex].icon}</span>
-            <h3 className="text-xl font-bold text-white">{industries[currentIndex].title}</h3>
-            <p className="text-gray-300 text-sm">{industries[currentIndex].desc}</p>
+            <span className="material-symbols-outlined text-6xl text-[#F58220]">{industries[currentIndex].icon}</span>
+            <h3 className="text-2xl font-bold text-white mt-2">{industries[currentIndex].title}</h3>
+            <p className="text-gray-300 text-base">{industries[currentIndex].desc}</p>
           </motion.div>
           
           <button onClick={() => setCurrentIndex((prev) => (prev + 1) % industries.length)} className="text-white p-1 hover:text-[#F58220] transition-colors">

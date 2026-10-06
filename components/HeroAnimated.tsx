@@ -20,9 +20,17 @@ export default function HeroAnimated() {
   };
 
   return (
-    <section className="relative min-h-[90vh] flex items-center w-full overflow-hidden">
-      {/* Transparent Overlay for Hero */}
-      <div className="absolute inset-0 bg-transparent z-0"></div>
+    <section className="relative min-h-[90vh] flex items-center w-full overflow-hidden bg-white">
+      {/* Honeycomb Background */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center z-0"
+        style={{ backgroundImage: "url('/honeycomb_bg.jpeg')" }}
+      ></div>
+      {/* Seamless white gradient overlay from the left, fading to transparent */}
+      <div 
+        className="absolute inset-y-0 left-0 w-full md:w-[75%] pointer-events-none z-0" 
+        style={{ background: 'linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.6) 40%, rgba(255, 255, 255, 0) 100%)' }}
+      ></div>
 
       <motion.div
         className="relative z-10 px-margin-desktop max-w-container-max mx-auto w-full flex flex-col gap-6"
@@ -31,14 +39,16 @@ export default function HeroAnimated() {
         animate="visible"
       >
         <motion.h1
-          className="text-6xl md:text-8xl font-bold text-white max-w-4xl leading-tight border-l-8 border-[#F58220] pl-6"
+          className="text-6xl md:text-8xl font-bold max-w-4xl leading-tight border-l-8 border-[#F58220] pl-6"
+          style={{ color: '#1F2937' }}
           variants={itemVariants}
         >
           EASING BUSINESS<br />COMPLEXITY
         </motion.h1>
 
         <motion.p
-          className="text-lg md:text-xl text-gray-200 max-w-2xl"
+          className="text-lg md:text-xl font-semibold max-w-2xl"
+          style={{ color: '#1F2937' }}
           variants={itemVariants}
         >
           With Expert Advisory, 10TEN Stands As A Trusted Partner For Businesses In South Africa, Providing Expert Sage Intacct, Payroll & HR, And Outsourced Accounting Services.
