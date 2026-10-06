@@ -94,16 +94,16 @@ export default function ContactForm() {
             className="bg-white/5 backdrop-blur-md border border-white/10 w-full px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#F58220] transition-colors appearance-none"
           >
             <option value="" disabled className="text-black">Industry</option>
-            <option value="Business Services" className="text-black">Business Services</option>
-            <option value="Financial Services" className="text-black">Financial Services</option>
+            <option value="SaaS & Software" className="text-black">SaaS & Software</option>
+            <option value="Nonprofits" className="text-black">Nonprofits</option>
             <option value="Professional Services" className="text-black">Professional Services</option>
-            <option value="Not for Profit" className="text-black">Not for Profit</option>
+            <option value="Healthcare" className="text-black">Healthcare</option>
+            <option value="Financial Services" className="text-black">Financial Services</option>
+            <option value="Hospitality" className="text-black">Hospitality</option>
+            <option value="Construction & Real Estate" className="text-black">Construction & Real Estate</option>
             <option value="Retail" className="text-black">Retail</option>
-            <option value="Manufacturing" className="text-black">Manufacturing</option>
-            <option value="Wholesale Distribution" className="text-black">Wholesale Distribution</option>
-            <option value="Technology and Software" className="text-black">Technology and Software</option>
+            <option value="Distribution" className="text-black">Distribution</option>
             <option value="Government - Public Administration" className="text-black">Government - Public Administration</option>
-            <option value="Other" className="text-black">Other</option>
           </select>
           <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-white">
             <span className="material-symbols-outlined">expand_more</span>
@@ -111,7 +111,7 @@ export default function ContactForm() {
         </div>
       </div>
 
-      <div className="w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
         <div className="relative w-full">
           <select
             name="products_services"
@@ -122,6 +122,22 @@ export default function ContactForm() {
             <option value="Sage Intacct" className="text-black">Sage Intacct</option>
             <option value="Sage 300 People & HR" className="text-black">Sage 300 People & HR</option>
             <option value="Accounting Services" className="text-black">Accounting Services</option>
+          </select>
+          <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-white">
+            <span className="material-symbols-outlined">expand_more</span>
+          </div>
+        </div>
+        
+        <div className="relative w-full">
+          <select
+            name="company_classification"
+            defaultValue=""
+            className="bg-white/5 backdrop-blur-md border border-white/10 w-full px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#F58220] transition-colors appearance-none"
+          >
+            <option value="" disabled className="text-black">Company Classification</option>
+            <option value="Small and Micro (R10M or less)" className="text-black">Small and Micro (R10M or less)</option>
+            <option value="Medium (R10M to R50M)" className="text-black">Medium (R10M to R50M)</option>
+            <option value="Large (R51M+)" className="text-black">Large (R51M+)</option>
           </select>
           <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-white">
             <span className="material-symbols-outlined">expand_more</span>

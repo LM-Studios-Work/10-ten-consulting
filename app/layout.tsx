@@ -48,7 +48,7 @@ export default function RootLayout({
       <body className={`${openSans.variable} ${montserrat.variable} antialiased font-body min-h-screen flex flex-col relative overflow-x-hidden`}>
         <HoneycombBackground />
         <Navbar />
-        <main className="flex-grow z-10 pt-[100px] w-full flex flex-col">
+        <main className="flex-grow z-10 pt-[72px] md:pt-[88px] w-full flex flex-col">
           {children}
         </main>
         {process.env.NODE_ENV === 'production' && <Analytics />}

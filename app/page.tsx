@@ -36,8 +36,8 @@ export default function HomePage() {
             </div>
           </div>
           <div className="w-full lg:w-1/2 grid grid-cols-2 gap-4">
-             <img alt="Consultants working" className="rounded-lg shadow-md w-full h-full object-cover aspect-[3/4]" src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2940&auto=format&fit=crop"/>
-             <img alt="Financial charts" className="rounded-lg shadow-md w-full h-full object-cover aspect-[3/4] mt-8" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop"/>
+             <img alt="Consultants working" className="rounded-lg shadow-md w-full h-full object-cover aspect-[3/4]" src="/images/team-meeting.jpg"/>
+             <img alt="Financial charts" className="rounded-lg shadow-md w-full h-full object-cover aspect-[3/4] mt-8" src="/images/office-discussion.jpg"/>
           </div>
         </div>
       </section>
@@ -58,7 +58,7 @@ export default function HomePage() {
       <section className="py-24 w-full relative z-10">
         <div className="px-margin-desktop max-w-container-max mx-auto flex flex-col lg:flex-row gap-16 items-center">
           <div className="w-full lg:w-1/2">
-             <img alt="Team working" className="rounded-lg shadow-xl w-full h-auto object-cover" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2940&auto=format&fit=crop"/>
+             <img alt="Team working" className="rounded-lg shadow-xl w-full h-auto object-cover" src="/images/team-meeting.jpg"/>
           </div>
           <div className="w-full lg:w-1/2 flex flex-col gap-8">
             <div>
@@ -106,7 +106,7 @@ export default function HomePage() {
       <section className="relative py-32 flex items-center w-full overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center z-0"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2938&auto=format&fit=crop')" }}
+          style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
         >
           <div className="absolute inset-0 bg-[#13363B]/80 mix-blend-multiply"></div>
           <div className="absolute inset-0 bg-black/40"></div>
@@ -129,7 +129,7 @@ export default function HomePage() {
       <section className="py-24 w-full relative z-10">
         <div className="px-margin-desktop max-w-container-max mx-auto flex flex-col lg:flex-row gap-16 items-start">
           <div className="w-full lg:w-1/3">
-             <img alt="Professional consultant" className="rounded-lg shadow-xl w-full h-auto object-cover" src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2832&auto=format&fit=crop"/>
+             <img alt="Professional consultant" className="rounded-lg shadow-xl w-full h-auto object-cover" src="/images/consultant-portrait.jpg"/>
           </div>
           <div className="w-full lg:w-2/3 flex flex-col gap-8">
             <div>

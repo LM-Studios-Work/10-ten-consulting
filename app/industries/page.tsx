@@ -24,7 +24,7 @@ export default function IndustriesPage() {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden w-full">
         <div className="absolute inset-0 bg-[#13363B] mix-blend-multiply opacity-80 z-10"></div>
         <img 
-          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" 
+          src="/images/hero-bg.jpg" 
           alt="Industry Expertise" 
           className="absolute inset-0 w-full h-full object-cover z-0"
         />

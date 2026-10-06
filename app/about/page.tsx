@@ -12,7 +12,7 @@ export default function AboutPage() {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden w-full">
         <div className="absolute inset-0 bg-[#13363B] mix-blend-multiply opacity-80 z-10"></div>
         <img 
-          src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop" 
+          src="/images/team-meeting.jpg" 
           alt="About 10TEN Consulting" 
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
@@ -56,10 +56,10 @@ export default function AboutPage() {
           </div>
           
           <div className="lg:w-1/2 flex gap-4 w-full h-[600px]">
-            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop" alt="Consulting" className="w-1/2 h-full object-cover rounded-xl" />
+            <img src="/images/office-discussion.jpg" alt="Consulting" className="w-1/2 h-full object-cover rounded-xl" />
             <div className="w-1/2 flex flex-col gap-4">
-              <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop" alt="Analysis" className="h-[48%] object-cover rounded-xl" />
-              <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=2070&auto=format&fit=crop" alt="Meeting" className="h-[48%] object-cover rounded-xl" />
+              <img src="/images/office-discussion.jpg" alt="Analysis" className="h-[48%] object-cover rounded-xl" />
+              <img src="/images/team-meeting.jpg" alt="Meeting" className="h-[48%] object-cover rounded-xl" />
             </div>
           </div>
         </div>
@@ -70,14 +70,14 @@ export default function AboutPage() {
         <div className="max-w-container-max mx-auto flex flex-col lg:flex-row gap-16 items-center">
           <div className="lg:w-1/3">
             <img 
-              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop" 
-              alt="Leadership" 
+              src="/Msimelelo.jpeg" 
+              alt="Msimelelo Mcosana" 
               className="w-full aspect-[3/4] object-cover rounded-xl shadow-2xl" 
             />
           </div>
           <div className="lg:w-2/3 flex flex-col gap-4">
             <span className="text-[#F58220] font-semibold tracking-wider text-sm">Leadership</span>
-            <h2 className="text-3xl lg:text-4xl font-bold text-white">Placeholder Name, CPA</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-white">Msimelelo Mcosana, CBAC (SA)</h2>
             <h3 className="text-xl text-gray-300 font-medium">Founder & Managing Director</h3>
             <div className="w-12 h-1 bg-[#F58220] my-4"></div>
             <p className="text-gray-400 leading-relaxed text-lg">
@@ -103,7 +103,7 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="lg:w-1/2 h-[400px] lg:h-auto">
-            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070&auto=format&fit=crop" alt="Mission" className="w-full h-full object-cover" />
+            <img src="/images/office-discussion.jpg" alt="Mission" className="w-full h-full object-cover" />
           </div>
         </div>
         
@@ -118,7 +118,7 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="lg:w-1/2 h-[400px] lg:h-auto">
-            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" alt="Vision" className="w-full h-full object-cover" />
+            <img src="/images/hero-bg.jpg" alt="Vision" className="w-full h-full object-cover" />
           </div>
         </div>
       </section>
@@ -192,7 +192,7 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="lg:w-1/2">
-             <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2084&auto=format&fit=crop" alt="Team hands" className="w-full h-auto rounded-xl shadow-2xl" />
+             <img src="/images/team-meeting.jpg" alt="Team hands" className="w-full h-auto rounded-xl shadow-2xl" />
           </div>
         </div>
       </section>
